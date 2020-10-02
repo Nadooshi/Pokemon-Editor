@@ -1,0 +1,1 @@
+caption = bullet_physic_text[index]

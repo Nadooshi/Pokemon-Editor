@@ -1,0 +1,101 @@
+Сделать кнопку в rm_loader "удалить покемона" с подтвеждением действия.
+Сделать функционал кнопок "ob_button_clear_attack" и "ob_button_exit_attack" в rm_attack_editor
+[ DONE ]
+
+
+Сделать rm_attack_list.
+Редактирование и добавление атак независимо от покемона.
+В покемоне нет атак.
+Сделать первую комнату выбора между редакторами атак/покемона.
+[ DONE ]
+
+Сделать заполнение rm_attack_list на подобие rm_loader.
+Переделать сохранение action в rm_attack_editor
+[ DONE ]
+
+Структура ini файла:
+["pokemons"]
+	pokemon_title = ds_map_write(current_pokemon)
+	pokemon_title = ds_map_write(current_pokemon)
+	...
+	"pokemon_list" = ds_map_write(pokemon_list)
+	"special_list" = ds_list_write(special_list)
+["actions"]
+	action_name = ds_map_write(current_action_edit)
+	action_name = ds_map_write(current_action_edit)
+	...
+	"action_list" = ds_map_write(action_list)
+[ DONE ]
+
+pokemon_list и action_list сделаны как ds_map для того, чтобы искать значения
+по имени, а не по номеру(индексу).
+
+rm_action_list и rm_loader должны работать в двух режимах: editing и read-only (selection)
+Как сделать ссылки/указатели на редактируемые свойства?
+[ DONE ]
+
+(*) PROBLEM
+	При заполнении rm_loader используется ob_pokemon для временного хранения данных для загрузки 
+	мелких изображений. Это конфликтует с edit_mode, так как стирает редактируемый ob_pokemon
+
+Сделать чтобы sc_load_pokemon возвращал новый ds_map. Текущий редактируемый покемон должен храниться
+в глобальной ds_map, а не в ob_pokemon
+[ DONE ]
+
+Изменить способ обновления слотов. Элементы должны обновляться при создании слота.
+Не использовать считывание из ini файла внутри user_event0 элементов, а ссылаться только на current_action.
+[ DONE ]
+
+В rm_editor добавить параметр size. 1x1, 2x2, 3x3 (tiny, normal, big, giant)
+Зарываемый, взлетаемый.
+[ DONE ]
+
+BUG! ob_slider в rm_attack_editor не позволяет никак задать нулевое значение.
+[ DONE ]
+
+rm_ability_editor: как работает ob_random_abilities? Какому параметру соответствует?
+[ DONE ]
+
+Исправить повторение кода в ob_weather_ability, ob_daytime_ability ...
+Унифицировать все ui_objects для работы в любой room. 
+[      ]
+
+В rm_attack_editor запрограммировать кнопку "Gif" (ob_button) на выбор спрайта,
+который должен отобразиться в picture "None". Маленькие иконки ob_element_attack
+и ob_material_attack должны синхронно обновляться.
+[ DONE ]
+
+ob_face_variant in rm_select_sprite по сути тоже самое что и ob_variant_anim in rm_select_anim. 
+Сделать универсальный объект
+[      ]
+
+В rm_ability_editor теперь есть кнопки и картинка 'in_state' и 'state'.
+В rm_ability_editor надо запрограммировать:
+* in_state - как бы покемон под действием /только/,/кроме/ state
+* state - на покемона накладывается state с вероятностью state_rate
+* картинка 'ob_upgrade_state' и текст 'ob_upgrade_state_value'
+* добавить новый "state" mind control, чтобы сохранялся корректно.
+[ DONE ]
+
+Сделать отображение выбранного passive ability в rm_editor. Перенести composed slot
+из rm_abilities в rm_editor
+[ DONE ]
+
+Убрать функционал с ob_frame_selectable, не понятно что срабатывает при клике, сам ob_frame
+или кнопки на ней. 
+[ DONE ]
+
+Сделать предварительную загрузку ability_slot
+Предотвратить "авто"выбор abilities: не должно сразу срабатывать нажатие кнопки мыши
+по abilities при выборе.
+Сделать возможность убирания ability из покемона.
+[ DONE ]
+
+Фильтровать в rm_abilities по назначению P или A.
+[      ]
+
+Сделать добавление abilities для actions
+[ DONE ]
+
+Добавление actions к покемону в rm_editor
+[ DONE ]
