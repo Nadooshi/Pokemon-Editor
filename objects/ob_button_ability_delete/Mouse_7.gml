@@ -14,5 +14,9 @@ ini_open(path)
 	ini_write_string("abilities", "ability_list", ds_map_write(ability_list))
 ini_close()
 
+// reload bini
+bini_unload()
+bini_load(path)
+
 instance_destroy()
 

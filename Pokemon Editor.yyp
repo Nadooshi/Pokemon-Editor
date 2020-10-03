@@ -162,6 +162,7 @@
     {"id":{"name":"tl_ground1","path":"tilesets/tl_ground1/tl_ground1.yy",},"order":0,},
     {"id":{"name":"tl_gym","path":"tilesets/tl_gym/tl_gym.yy",},"order":1,},
     {"id":{"name":"sc_create_popup_frame","path":"scripts/sc_create_popup_frame/sc_create_popup_frame.yy",},"order":0,},
+    {"id":{"name":"BigIni","path":"scripts/BigIni/BigIni.yy",},"order":13,},
     {"id":{"name":"sc_create_slot_loader","path":"scripts/sc_create_slot_loader/sc_create_slot_loader.yy",},"order":1,},
     {"id":{"name":"sc_create_slot_composed","path":"scripts/sc_create_slot_composed/sc_create_slot_composed.yy",},"order":2,},
     {"id":{"name":"sc_create_slot_list","path":"scripts/sc_create_slot_list/sc_create_slot_list.yy",},"order":3,},

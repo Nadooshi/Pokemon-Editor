@@ -14,12 +14,12 @@ if is_undefined(name) or name = "" {
 
 // all right
 dedicated_map = ds_map_create()
-ini_open(path)
-	ds_map_read(dedicated_map, ini_read_string("abilities", name, ""))
+
+	ds_map_read(dedicated_map, bini_sections[? "abilities"][? name])
 	
 	event_inherited();
 	
-ini_close()
+
 ds_map_destroy(dedicated_map)
 
 

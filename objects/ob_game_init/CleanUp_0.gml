@@ -27,3 +27,6 @@ if ds_exists(pokemon_list, ds_type_list)
 	ds_list_destroy(pokemon_list)
 
 sc_cleanup_globals()
+
+bini_unload()
+

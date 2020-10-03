@@ -175,15 +175,11 @@ function sc_rate_action(_a_map, _abil_map) {
 		_abil_loaded = not ds_map_empty(_abil_map)
 		
 		if not _abil_loaded {
-			ini_open(path)
-				ds_map_read(_abil_map, ini_read_string("abilities", _abil, ""))
-			ini_close()
+			ds_map_read(_abil_map, bini_sections[? "abilities"][? _abil])
 			show_debug_message("New ability loaded for rating")
 		} else
 		if _abil_map[? "name"] != _abil {
-			ini_open(path)
-				ds_map_read(_abil_map, ini_read_string("abilities", _abil, ""))
-			ini_close()
+			ds_map_read(_abil_map, bini_sections[? "abilities"][? _abil])
 			show_debug_message("New ability loaded for rating")
 		}
 		_val[0] = (_abil_map[? "multiply"] + 1)

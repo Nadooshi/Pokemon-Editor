@@ -2,13 +2,10 @@
 
 // all right
 dedicated_map = ds_map_create()
-ini_open(path)
-	ds_map_read(dedicated_map, ini_read_string("actions", name, ""))
-	
-	event_inherited();
-	
-ini_close()
 
+ds_map_read(dedicated_map, bini_sections[? "actions"][? name])
+event_inherited();
+	
 if room = rm_editor
 if not is_undefined(dedicated_map[? "act_force"]) and not is_undefined(current_pokemon[? "force"]) 
 if dedicated_map[? "act_force"] > current_pokemon[? "force"]

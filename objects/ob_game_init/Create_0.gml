@@ -390,20 +390,20 @@ if path = "" {
 	exit
 }
 
-ini_open(path)
-	ds_map_read(action_list, ini_read_string("actions", "action_list", ""))
-	action_list_count = ds_map_size(action_list)
-	ds_map_read(ability_list, ini_read_string("abilities", "ability_list", ""))
-	ability_count = ds_map_size(ability_list)	
-	ds_map_read(pokemon_list, ini_read_string("pokemons", "pokemon_list", ""))
-	pokemon_list_count = ds_map_size(pokemon_list)
-	var _arr = 0
-	if ini_section_exists("element_table")
-	for (var i=0; i<array_length_1d(element_table); i++) {
-		_arr = array_from_string( ini_read_string("element_table", string(i), "0"))
-		element_table[i] = _arr
-	}
-ini_close()
+bini_load(path)
+
+ds_map_read(action_list, bini_sections[? "actions"][? "action_list"])
+action_list_count = ds_map_size(action_list)
+ds_map_read(ability_list, bini_sections[? "abilities"][? "ability_list"])
+ability_count = ds_map_size(ability_list)	
+ds_map_read(pokemon_list, bini_sections[? "pokemons"][? "pokemon_list"])
+pokemon_list_count = ds_map_size(pokemon_list)
+var _arr = 0
+if ds_map_exists(bini_sections, "element_table")
+for (var i=0; i<array_length_1d(element_table); i++) {
+	_arr = array_from_string( bini_sections[? "element_table"][? string(i)])
+	element_table[i] = _arr
+}
 
 // Get max levels from predecessors
 sc_get_p_stage()

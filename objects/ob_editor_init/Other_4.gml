@@ -43,12 +43,11 @@ while not is_undefined(_name) {
 	_count++ 
 }
 
-ini_open(path)
-	for (var i=0; i<_actioncount; i++) {
-		ds_map_read(_temp_map, ini_read_string("actions", _act_list[| i], ""))
-		_level_list[| i] = _temp_map[? "level"]*1000 + i
-	}
-ini_close()
+for (var i=0; i<_actioncount; i++) {
+	ds_map_read(_temp_map, bini_sections[? "actions"][? _act_list[| i]])
+	_level_list[| i] = _temp_map[? "level"]*1000 + i
+}
+	
 ds_list_sort(_level_list, true)
 var _sorted_list = ds_list_create(); ds_list_clear(_sorted_list)
 var n = 0

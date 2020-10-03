@@ -18,4 +18,7 @@ if _ok {
 		for (var i=0; i<array_length_1d(element_table); i++)
 			ini_write_string("element_table", string(i), array_to_string(element_table[i]))
 	ini_close()
+	// reload bini
+	bini_unload()
+	bini_load(path)
 }

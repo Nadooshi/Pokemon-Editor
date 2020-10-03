@@ -10,12 +10,10 @@ if not slots_created {
 	ds_list_sort(_abl_list, true)
 	var _state_list = ds_list_create(); ds_list_clear(_state_list)
 
-	ini_open(path)
-		for (var i=0; i<ability_count; i++) {
-			ds_map_read(current_ability, ini_read_string("abilities", _abl_list[| i], ""))
-			_state_list[| i] = current_ability[? "state"]*1000 + i
-		}
-	ini_close()
+	for (var i=0; i<ability_count; i++) {
+		ds_map_read(current_ability, bini_sections[? "abilities"][? _abl_list[| i]])
+		_state_list[| i] = current_ability[? "state"]*1000 + i
+	}
 
 	// sort by A/P
 	ds_list_sort(_state_list, true)

@@ -8,12 +8,10 @@ if not slots_created {
 	var _abl_list = sc_map_to_list(ability_list)
 	var _AP_list = ds_list_create(); ds_list_clear(_AP_list)
 
-	ini_open(path)
-		for (var i=0; i<ability_count; i++) {
-			ds_map_read(current_ability, ini_read_string("abilities", _abl_list[| i], ""))
-			_AP_list[| i] = current_ability[? "for"]*1000 + i
-		}
-	ini_close()
+	for (var i=0; i<ability_count; i++) {
+		ds_map_read(current_ability, bini_sections[? "abilities"][? _abl_list[| i]])
+		_AP_list[| i] = current_ability[? "for"]*1000 + i
+	}
 
 	// sort by A/P
 	ds_list_sort(_AP_list, true)

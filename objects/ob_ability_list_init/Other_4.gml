@@ -7,13 +7,11 @@ with ob_button_abilities_sort_name
 
 // update UI elements
 dedicated_map = ds_map_create()
-ini_open(path)
-	with ob_ui_object
-	if instance_exists(parent) {
-		ds_map_read(dedicated_map, ini_read_string("abilities", parent.name, ""))
-		event_perform(ev_other, ev_user0)
-	}
-ini_close()
+with ob_ui_object
+if instance_exists(parent) {
+	ds_map_read(dedicated_map, bini_sections[? "abilities"][? parent.name])
+	event_perform(ev_other, ev_user0)
+}
 ds_map_destroy(dedicated_map)
 
 // edit mode processing

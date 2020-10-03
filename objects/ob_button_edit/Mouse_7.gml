@@ -3,9 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-ini_open(path)
-	ds_map_read(current_action, ini_read_string("actions", parent.name, ""))
-ini_close()
+ds_map_read(current_action, bini_sections[? "actions"][? parent.name])
 ds_map_copy(previous_map, current_action)
 
 ds_stack_push(map_stack, current_action)

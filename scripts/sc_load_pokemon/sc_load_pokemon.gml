@@ -7,11 +7,9 @@ function sc_load_pokemon(argument0, argument1) {
 	var _name = argument0
 	var _ds = argument1
 	if ds_exists(_ds, ds_type_map) {
-		ini_open(path)
-			ds_map_read(_ds, ini_read_string("pokemons", _name , ""))
-			_ds[? "actions"] = ds_map_create()
-			ds_map_read(_ds[? "actions"], ini_read_string("binded_actions", _name , ""))
-		ini_close()
+		ds_map_read(_ds, bini_sections[? "pokemons"][? _name])
+		_ds[? "actions"] = ds_map_create()
+		ds_map_read(_ds[? "actions"], bini_sections[? "binded_actions"][? _name])
 	}
 
 

@@ -45,17 +45,17 @@ function sc_rate_pokemon(argument0) {
 	var _dmg = 0
 	var _name = ds_map_find_first(dedicated_map[? "actions"])
 	var _temp_map = ds_map_create()
-	ini_open(path)
-		while not is_undefined(_name) {
-			_count++ 
-			ds_map_read(_temp_map, ini_read_string("actions", _name, ""))
-				if not is_undefined(_temp_map[? "rating"])
-					_a_rate += _temp_map[? "rating"]
-				if not is_undefined(_temp_map[? "rating"])
-					_dmg += _temp_map[? "damage"]
-			_name = ds_map_find_next(dedicated_map[? "actions"], _name)
-		}
-	ini_close()
+	
+	while not is_undefined(_name) {
+		_count++ 
+		ds_map_read(_temp_map, bini_sections[? "actions"][? _name])
+			if not is_undefined(_temp_map[? "rating"])
+				_a_rate += _temp_map[? "rating"]
+			if not is_undefined(_temp_map[? "rating"])
+				_dmg += _temp_map[? "damage"]
+		_name = ds_map_find_next(dedicated_map[? "actions"], _name)
+	}
+		
 	ds_map_destroy(_temp_map)
 
 	_val[0] = _dmg / _count

@@ -9,12 +9,10 @@ if not slots_created {
 	var _act_list = sc_map_to_list(action_list)
 	var _type_list = ds_list_create(); ds_list_clear(_type_list)
 
-	ini_open(path)
 	for (var i=0; i<action_list_count; i++) {
-		ds_map_read(current_action, ini_read_string("actions", _act_list[| i], ""))
+		ds_map_read(current_action, bini_sections[? "actions"][? _act_list[| i]])
 		_type_list[| i] = current_action[? "type"] * 1000 + i
 	}
-	ini_close()
 
 	// sort by type
 	ds_list_sort(_type_list, true)

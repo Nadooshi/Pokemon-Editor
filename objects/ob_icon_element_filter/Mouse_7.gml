@@ -6,12 +6,10 @@ var _sorted_list = ds_list_create(); ds_list_clear(_sorted_list)
 var _filtered = ds_list_create(); ds_list_clear(_filtered)
 var _level_list = ds_list_create(); ds_list_clear(_level_list)
 
-ini_open(path)
-	for (var i=0; i<action_list_count; i++) {
-		ds_map_read(current_action, ini_read_string("actions", _act_list[| i], ""))
-		_level_list[| i] = current_action[? "level"]*1000 + i
-	}
-ini_close()
+for (var i=0; i<action_list_count; i++) {
+	ds_map_read(current_action, bini_sections[? "actions"][? _act_list[| i]])
+	_level_list[| i] = current_action[? "level"]*1000 + i
+}
 
 // sort by level
 ds_list_sort(_level_list, true)
@@ -23,13 +21,10 @@ for (var i=0; i<action_list_count; i++) {
 }
 
 // filter
-
-ini_open(path)
-	for (var i=0; i<action_list_count; i++) {
-		ds_map_read(current_action, ini_read_string("actions", _sorted_list[| i], ""))
-		_elem_list [| i] = [current_action[? "element"], current_action[? "material"], i]
-	}
-ini_close()
+for (var i=0; i<action_list_count; i++) {
+	ds_map_read(current_action, bini_sections[? "actions"][? _sorted_list[| i]])
+	_elem_list [| i] = [current_action[? "element"], current_action[? "material"], i]
+}
 
 var _item = []
 for (var i=0; i<ds_list_size(_elem_list)-1; i++) {

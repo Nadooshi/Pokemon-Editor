@@ -11,6 +11,10 @@ ini_open(path)
 	ini_write_string("actions", "action_list", ds_map_write(action_list))
 ini_close()
 
+// reload bini
+bini_unload()
+bini_load(path)
+
 ds_map_copy(previous_map, current_action)
 
 // add new action to edit_value
