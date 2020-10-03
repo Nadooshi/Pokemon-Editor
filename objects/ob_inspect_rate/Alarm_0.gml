@@ -50,4 +50,4 @@ old_rate = current_rate
 	with ob_rating_num 
 		caption = string(other.current_rate)
 
-alarm_set(0, 600)
+alarm_set(0, 100)
