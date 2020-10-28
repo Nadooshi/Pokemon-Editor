@@ -36,6 +36,9 @@
     {"compositeImage":{"FrameId":{"name":"f99b3f98-6eb5-4f6e-ba08-59df9fd57912","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"f99b3f98-6eb5-4f6e-ba08-59df9fd57912","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"LayerId":{"name":"e8e4625f-366a-45ab-a0aa-c2a7eeadfb8e","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_exp_attack_3","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","name":"f99b3f98-6eb5-4f6e-ba08-59df9fd57912","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3700397f-ee9f-406b-872d-b6e63f37eff7","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3700397f-ee9f-406b-872d-b6e63f37eff7","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"LayerId":{"name":"e8e4625f-366a-45ab-a0aa-c2a7eeadfb8e","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sp_exp_attack_3","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","name":"3700397f-ee9f-406b-872d-b6e63f37eff7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sp_exp_attack_3","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},
@@ -45,7 +48,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -54,9 +57,10 @@
             {"id":"3c585b3e-1241-48b4-a2ed-4fcd418666fd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db92d025-a9df-4f08-b9cf-ffb2867bcdcd","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4bd31ea6-a2f7-42cd-a551-c13f5c071c6d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f490c85-9761-40b4-b663-bac3edfe3a72","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4d6fd1e1-3b13-4bda-8064-b6bc85a1f8fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f99b3f98-6eb5-4f6e-ba08-59df9fd57912","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cd6323fa-b625-4401-b150-4e34157eb022","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3700397f-ee9f-406b-872d-b6e63f37eff7","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
