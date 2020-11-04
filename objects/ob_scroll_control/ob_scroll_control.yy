@@ -24,6 +24,8 @@
     {"isDnD":false,"eventNum":60,"eventType":6,"collisionObjectId":null,"parent":{"name":"ob_scroll_control","path":"objects/ob_scroll_control/ob_scroll_control.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"ob_scroll_control","path":"objects/ob_scroll_control/ob_scroll_control.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"parent":{"name":"ob_scroll_control","path":"objects/ob_scroll_control/ob_scroll_control.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":33,"eventType":5,"collisionObjectId":null,"parent":{"name":"ob_scroll_control","path":"objects/ob_scroll_control/ob_scroll_control.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":34,"eventType":5,"collisionObjectId":null,"parent":{"name":"ob_scroll_control","path":"objects/ob_scroll_control/ob_scroll_control.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":null,"multiselect":false,"filters":[

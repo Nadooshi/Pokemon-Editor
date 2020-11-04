@@ -1,3 +1,3 @@
 /// @desc
 
-dScroll -= 10
+dScroll -= scrollSpeed

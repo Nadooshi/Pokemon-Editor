@@ -20,9 +20,6 @@ with ob_scroll_control {
 	view_x = 1920 + 1920
 	event_perform(ev_other, ev_room_start)
 	
-	instance_deactivate_layer("Elements")
-	instance_deactivate_layer("Frames")
-	instance_activate_region(view_x, view_y, view_w, room_height, true)
 	// update UI elements
 	with ob_frame 
 		event_perform(ev_other,ev_user0)	

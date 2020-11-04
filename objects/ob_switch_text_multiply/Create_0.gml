@@ -21,4 +21,3 @@ variant_text[variant_count] = "x4"
 variant_count++
 
 //image_alpha = 0
-show_debug_message("I am created!!! " + object_get_name(object_index))
