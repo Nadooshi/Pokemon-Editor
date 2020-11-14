@@ -3,14 +3,9 @@
 /// @arg name
 /// @arg arr_elements
 /// @arg frame_object
-function sc_create_slot_composed(argument0, argument1, argument2, argument3) {
+function sc_create_slot_composed(_x, _y, _name, _arr) {
 
-	var _x = argument0
-	var _y = argument1
-	var _name = argument2
-	var _arr = argument3
-
-	var _arr_count = array_length_1d(_arr)
+	var _arr_count = array_length(_arr)
 	var _parent_frame
 
 	with instance_create_layer(_x, _y, "Frames", ds_map_find_value(_arr[0], "ob")) {
@@ -31,10 +26,5 @@ function sc_create_slot_composed(argument0, argument1, argument2, argument3) {
 		parameter_name = ds_map_find_value(_arr[i], "param")
 
 	}
-
 	return _parent_frame
-
-
-
-
 }

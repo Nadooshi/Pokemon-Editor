@@ -14,8 +14,15 @@ if is_undefined(name) or name = "" {
 
 // all right
 dedicated_map = ds_map_create()
-
-	ds_map_read(dedicated_map, bini_sections[? "abilities"][? name])
+	var _ini_string = bini_sections[? "abilities"][? name]
+	if not is_undefined(_ini_string)
+		ds_map_read(dedicated_map, _ini_string)
+	else {
+		show_message("Ability \"" + name + "\" not found!")
+		ds_map_destroy(dedicated_map)
+		instance_destroy()
+		exit
+	}
 	
 	event_inherited();
 	

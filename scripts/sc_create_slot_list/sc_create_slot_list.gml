@@ -3,18 +3,13 @@
 /// @arg width
 /// @arg x
 /// @arg y
-function sc_create_slot_list(argument0, argument1, argument2, argument3, argument4) {
+function sc_create_slot_list(_slot_list, _slot, _width, _x, _y) {
 
-	var _slot_list = argument0
 	var _slot_count = ds_list_size(_slot_list)
-	var _slot = argument1
-	var _width = argument2
-	var _x = argument3
-	var _y = argument4
 
 	var slot_w;
 	var slot_h;
-
+		
 	with instance_create_layer(0, 0, "Frames", ds_map_find_value(_slot[0], "ob")) {
 		image_xscale = ds_map_find_value(_slot[0], "xs")
 		image_yscale = ds_map_find_value(_slot[0], "ys")

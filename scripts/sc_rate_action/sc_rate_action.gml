@@ -5,7 +5,19 @@ function sc_rate_action(_a_map, _abil_map) {
 	var _cur_rate = 0
 	var _val = 0
 	var _type = ds_map_find_value(_a_map,"type")
-	var _abil = _a_map[? "active"]
+	var _abil_loaded = false
+	if not is_undefined(_abil_map)
+	if ds_exists(_abil_map, ds_type_map)
+	if not ds_map_empty(_abil_map)
+		_abil_loaded = true
+		
+	if not _abil_loaded {
+		var _s = bini_sections[? "abilities"][? _a_map[? "active"]]
+		if not is_undefined(_s)
+			ds_map_read(_abil_map, _s)
+		else
+			_abil_map = undefined
+	}
 
 	switch _type {
 		case _ATTACK_TYPE.front: {
@@ -157,7 +169,7 @@ function sc_rate_action(_a_map, _abil_map) {
 		else
 			_cur_rate = _cur_rate*_val[4]
 	} else {
-		if is_undefined(_abil) or _abil = "" {
+		if is_undefined(_abil_map) {
 			_cur_rate = 0
 		}
 	}
@@ -169,19 +181,8 @@ function sc_rate_action(_a_map, _abil_map) {
 		_cur_rate *= 0.5
 
 	//=======================================================================================
-	var _abil_loaded = false
 
-	if not is_undefined(_abil) or not _abil = "" {
-		_abil_loaded = not ds_map_empty(_abil_map)
-		
-		if not _abil_loaded {
-			ds_map_read(_abil_map, bini_sections[? "abilities"][? _abil])
-			show_debug_message("New ability loaded for rating")
-		} else
-		if _abil_map[? "name"] != _abil {
-			ds_map_read(_abil_map, bini_sections[? "abilities"][? _abil])
-			show_debug_message("New ability loaded for rating")
-		}
+	if not is_undefined(_abil_map) {
 		_val[0] = (_abil_map[? "multiply"] + 1)
 		_val[1] = 0.25 * (_abil_map[? "multiply_rate"] +1)
 		_cur_rate += (_cur_rate * _val[1]) * _val[0]	
