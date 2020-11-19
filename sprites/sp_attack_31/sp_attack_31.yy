@@ -215,7 +215,7 @@
     "eventStubScript": null,
     "parent": {"name":"sp_attack_31","path":"sprites/sp_attack_31/sp_attack_31.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sp_attack_31",
     "tags": [],
     "resourceType": "GMSequence",
   },
