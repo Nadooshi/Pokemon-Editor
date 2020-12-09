@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sp_pr_attack_40","path":"sprites/sp_pr_attack_40/sp_pr_attack_40.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sp_pr_attack_40",
     "tags": [],
     "resourceType": "GMSequence",
   },
