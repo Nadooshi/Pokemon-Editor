@@ -405,5 +405,10 @@ for (var i=0; i<array_length_1d(element_table); i++) {
 	element_table[i] = _arr
 }
 
+globalvar logging;
+logging = ds_list_create()
+
+
+
 // Get max levels from predecessors
 sc_get_p_stage()

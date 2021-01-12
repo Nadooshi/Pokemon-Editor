@@ -34,4 +34,3 @@ if not edit_mode {   // select_mode
 	instance_destroy(ob_button_edit)
 }
 
-

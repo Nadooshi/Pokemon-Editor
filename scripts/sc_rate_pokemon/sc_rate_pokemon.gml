@@ -38,7 +38,7 @@ function sc_rate_pokemon(_pokemon_map) {
 	if _pokemon_map[? "passive_1"] != ""
 		_cur_rate += 15
 	if not is_undefined(_pokemon_map[? "passive_2"])
-	if _pokemon_map[? "passive_2"] != ""
+	if _pokemon_map[? "passive_2"] != "" 
 		_cur_rate += 15
 	//==============================================================
 	var _a_rate = 0

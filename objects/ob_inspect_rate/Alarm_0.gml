@@ -2,6 +2,7 @@
 
 switch room_mode {
 	case 1:{
+		ds_list_clear(logging)
 		current_rate = sc_rate_action(current_action, aux_value)
 		break;
 	}
