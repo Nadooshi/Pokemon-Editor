@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":63.0,"displayName":"default","resourceVersion":"1.0","name":"280f9d63-1d18-4778-9309-f674ebde06f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI_card_editor",
-    "path": "folders/Sprites/UI_card_editor.yy",
+    "name": "UI_attack_editor",
+    "path": "folders/Sprites/UI_attack_editor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_button_close",

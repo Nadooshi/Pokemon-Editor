@@ -261,6 +261,12 @@ attack_affect_text[_ATTACK_AFFECT.friend] = "friend"
 attack_affect_text[_ATTACK_AFFECT.enemy] = "enemy"
 attack_affect_text[_ATTACK_AFFECT.itself] = "itself"
 
+enum _ATTACK_ROLE {
+	debuff,
+	buff
+}
+
+
 enum _BULLET_PH {
 	custom,
 	soft,

@@ -26,28 +26,28 @@ function sc_rate_action(_a_map, _abil_map) {
 		case _ATTACK_TYPE.front: {
 			_val[0] = ds_map_find_value(_a_map,"ap")
 			_cur_rate += 15 * max((10 - _val[0] * 0.1),1)
-			sc_logging("Calc_rating", _a_name , "attack type front ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type front", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.melee: {
 			_val[0] = ds_map_find_value(_a_map, "radius")
 			_val[1] = ds_map_find_value(_a_map,"ap")
 			_cur_rate = (_cur_rate + 20 + _val[0] * 5) * max((10 - _val[1] * 0.1),1)
-			sc_logging("Calc_rating", _a_name , "attack type melee ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type melee", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.lunge: {
 			_val[0] = ds_map_find_value(_a_map,"range")
 			_val[1] = _val[0] * 0.09 + 1
 			_cur_rate = _cur_rate + 55 + power(_val[0], _val[1])
-			sc_logging("Calc_rating", _a_name , "attack type lunge ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type lunge", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.swoop: {
 			_val[0] = ds_map_find_value(_a_map,"range")
 			_val[1] = _val[0] * 0.09 + 1
 			_cur_rate = _cur_rate + 45 + power(_val[0], _val[1])
-			sc_logging("Calc_rating", _a_name , "attack type swoop ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type swoop", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.range: {
@@ -55,7 +55,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.07 + 1
 			_cur_rate = _cur_rate + 35 + _val[0] * 5 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type range ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type range", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.wave: {
@@ -63,7 +63,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.10 + 1
 			_cur_rate = _cur_rate + 65 + _val[0] * 25 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type wave ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type wave", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.ray: {
@@ -71,7 +71,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.08 + 1
 			_cur_rate = _cur_rate + 50 + _val[0] * 10 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type ray ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type ray", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.mortar: {
@@ -79,7 +79,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.09 + 1
 			_cur_rate = _cur_rate + 25 + _val[0] * 20 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type mortar ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type mortar", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.pool: {
@@ -87,7 +87,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.03 + 1
 			_cur_rate = _cur_rate + 15 + _val[0] * 15 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type pool ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type pool", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.cloud: {
@@ -95,14 +95,14 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.04 + 1
 			_cur_rate = _cur_rate + 20 + _val[0] * 20 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type cloud ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type cloud", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.aura: {
 			_val[1] = ds_map_find_value(_a_map,"range")
 			_val[2] = _val[1] * 0.11 + 1
 			_cur_rate += 65 + power(_val[1], _val[2])
-			sc_logging("Calc_rating", _a_name , "attack type aura ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type aura", _cur_rate)
 			break; 
 		}
 		case _ATTACK_TYPE.barrier: {
@@ -111,7 +111,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			_val[2] = _val[1] * 0.06 + 1
 			_val[3] = ceil(ds_map_find_value(_a_map, "damage") * 0.1)
 			_cur_rate = _cur_rate + (5 + power(_val[1], _val[2]) + _val[3]) * (_val[0] + 1)
-			sc_logging("Calc_rating", _a_name , "attack type barrier ", _cur_rate)
+			sc_logging("Calc_rating", _a_name , "attack type barrier", _cur_rate)
 			break; 
 		}
 	}
@@ -126,7 +126,7 @@ function sc_rate_action(_a_map, _abil_map) {
 		}
 		case _BULLET_PH.soft:{
 			_cur_rate += 0
-			sc_logging("Calc_rating", _a_name , "bullet phys soft ", 0)
+			sc_logging("Calc_rating", _a_name , "bullet phys soft", 0)
 			break;
 		}
 		case _BULLET_PH.chain:{
@@ -192,7 +192,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			sc_logging("Calc_rating", _a_name , "damage value +", (_val[3]*_val[4]))
 		} else {
 			_cur_rate = _cur_rate*_val[4]
-			sc_logging("Calc_rating", _a_name , "damage value +", (_cur_rate*_val[4]))
+			sc_logging("Calc_rating", _a_name , "damage value *", (_val[4]))
 		}
 	else 
 		if is_undefined(_abil_map) {
@@ -204,10 +204,14 @@ function sc_rate_action(_a_map, _abil_map) {
 	for (var i = 0; i < 5; i++)
 		_val[i] = 0
 	//=======================================================================================
-	if not ds_map_find_value(_a_map,"repeatable") {
+	_val[0] = _a_map[? "repeatable"] 
+	if _val[0] > 0 {
 		_cur_rate *= 0.5
-		sc_logging("Calc_rating", _a_name , "attack not repitable rate * 0.5 = ", _cur_rate)		
+		sc_logging("Calc_rating", _a_name , "attack disposable - rate * 0.5")
+	} else {
+		sc_logging("Calc_rating", _a_name , "attack reusable - rate no changed")
 	}
+
 	//=======================================================================================
 
 	_val[2] = 1
@@ -254,10 +258,10 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 2: {	// ожог
-				_val[1] = 20
+				_val[1] = 30
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + 3 * _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state scar +", ((_val[1] + 3 * _val[2]) * _val[0]))
+				_cur_rate += (_val[1] * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state scar +", ((_val[1] * _val[2]) * _val[0]))
 				break
 			}
 			case 3: {	// кровотечение
@@ -285,14 +289,14 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 6: {	// парализация
-				_val[1] = 23
+				_val[1] = 15
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + 2 * _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state paralyze +", ((_val[1] + 2 * _val[2]) * _val[0]))
+				_cur_rate += (_val[1] * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state paralyze +", ((_val[1] * _val[2]) * _val[0]))
 				break
 			}
 			case 7: {	// +1 к атаке
-				_val[1] = 5
+				_val[1] = 7
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -300,7 +304,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 8: {	// слабость
-				_val[1] = 5
+				_val[1] = 7
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -308,7 +312,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 9: {	// +1 к ОД
-				_val[1] = 4
+				_val[1] = 10
 				_val[2] = _abil_map[? "state_value"]
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
@@ -361,15 +365,15 @@ function sc_rate_action(_a_map, _abil_map) {
 			case 13: {	// усыпление
 				_val[1] = 20
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state lulling +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += (_val[1] + 2 * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state lulling +", ((_val[1] + 2 * _val[2]) * _val[0]))
 				break
 			}
 			case 14: {	// ошеломление
 				_val[1] = 30
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state stun +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += (_val[1] + 5 * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state stun +", ((_val[1] + 5 * _val[2]) * _val[0]))
 				break
 			}
 			case 15: {	// ужас
@@ -380,28 +384,28 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 16: {	// побег
-				_val[1] = 10
+				_val[1] = 8
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state escape +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += (_val[1] * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state escape +", ((_val[1] * _val[2]) * _val[0]))
 				break
 			}
 			case 17: {	// пропуск хода
-				_val[1] = 15
+				_val[1] = 10
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state waste time +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += (_val[1] * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state waste time +", ((_val[1] * _val[2]) * _val[0]))
 				break
 			}
 			case 18: {	// отвращение
 				_val[1] = 25
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state disgust +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += (_val[1] + 5 * _val[2]) * _val[0]
+				sc_logging("Calc_rating", _a_name , "state disgust +", ((_val[1] + 5 * _val[2]) * _val[0]))
 				break
 			}
 			case 19: {	// прицел
-				_val[1] = 7 
+				_val[1] = 30 
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -409,7 +413,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 20: {	// неуклюжесть
-				_val[1] = 7 
+				_val[1] = 30 
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -417,7 +421,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 21: {	// отдача
-				_val[1] = 4 
+				_val[1] = 4
 				_val[2] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] * _val[2]) * _val[0]
 				sc_logging("Calc_rating", _a_name , "state knockback +", ((_val[1] * _val[2]) * _val[0]))
@@ -435,7 +439,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				_val[1] = 7
 				_val[2] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state revenge +", ((_val[1] + _val[2]) * _val[0]))
+				sc_logging("Calc_rating", _a_name , "state revenge +" , ((_val[1] + _val[2]) * _val[0]))
 				break
 			}
 			case 24: {	// камикадзе
@@ -444,12 +448,12 @@ function sc_rate_action(_a_map, _abil_map) {
 			case 25: {	// гипноз
 				_val[1] = 35
 				_val[2] = _abil_map[? "state_time"]
-				_cur_rate += (_val[1] + _val[2]) * _val[0]
-				sc_logging("Calc_rating", _a_name , "state Hypnotize +", ((_val[1] + _val[2]) * _val[0]))
+				_cur_rate += _val[1] * _val[2] * _val[0]
+				sc_logging("Calc_rating", _a_name , "state Hypnotize +", (_val[1] * _val[2] * _val[0]))
 				break
 			}
 			case 26: {	// смущение
-				_val[1] = 7
+				_val[1] = 25
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -481,7 +485,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 30: {	// буст дальняя
-				_val[1] = 3 
+				_val[1] = 4
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -513,7 +517,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 34: {	// снятие эффектов
-				_val[1] = 40
+				_val[1] = 30
 				_val[2] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2]) * _val[0]
 				sc_logging("Calc_rating", _a_name , "state clear +", ((_val[1] + _val[2]) * _val[0]))
@@ -543,7 +547,7 @@ function sc_rate_action(_a_map, _abil_map) {
 				break
 			}
 			case 38: {	// ловкость
-				_val[1] = 7
+				_val[1] = 20
 				_val[2] = _abil_map[? "state_value"] * 0.1
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -553,7 +557,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			case 39: {	// обоюдный урон
 				_val[1] = 5
 				_val[2] = _abil_map[? "state_value"] * 0.1
-				_cur_rate -= (_val[1] + _val[2]) * 1 - _val[0] // minus
+				_cur_rate -= (_val[1] + _val[2]) * (1 - _val[0]) // minus
 				sc_logging("Calc_rating", _a_name , "state desperate -", ((_val[1] + _val[2]) * 1 - _val[0]))
 				break
 			}
@@ -566,7 +570,7 @@ function sc_rate_action(_a_map, _abil_map) {
 			}
 			case 41: {	// барьер
 				_val[1] = 15 
-				_val[2] = _abil_map[? "state_value"] * 0.2
+				_val[2] = _abil_map[? "state_value"] * 0.15
 				_val[3] = _abil_map[? "state_time"]
 				_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
 				sc_logging("Calc_rating", _a_name , "state barierre +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
@@ -584,12 +588,14 @@ function sc_rate_action(_a_map, _abil_map) {
 	_val[1] = _a_map[? "delay"]
 	_val[2] = _a_map[? "accuracy"]
 
+	sc_logging("Calc_rating", _a_name , "warmup - ", (_val[0] * 20))
+	sc_logging("Calc_rating", _a_name , "delay - ", (_val[1] * 10))
+	sc_logging("Calc_rating", _a_name , "accuracy " + string(_cur_rate) + " * ", _val[2])
+	
 	_cur_rate -= _val[0] * 20
-	sc_logging("Calc_rating", _a_name , "warmup +", (_val[0] * 20))
 	_cur_rate -= _val[1] * 10
-	sc_logging("Calc_rating", _a_name , "delay +", (_val[1] * 10))
 	_cur_rate = _cur_rate * _val[2]
-	sc_logging("Calc_rating", _a_name , "accuracy +", _val[2])
+
 	_val[0] = 0; _val[1] = 0; _val[2] = 0
 	//=======================================================================================
 

@@ -31,6 +31,7 @@ function sc_new_action() {
 
 	ds_map_add(result, "free_value", -1) // Free value for some needs
 	ds_map_add(result, "rating", 0)	// rating action 0-5. Over 5 not recommend
+	ds_map_add(result, "role", _ATTACK_ROLE.debuff)
 
 	return result
 

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"default","resourceVersion":"1.0","name":"729f79d2-fb3b-4e7d-9230-b1925fc52a1c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI_card_editor",
-    "path": "folders/Sprites/UI_card_editor.yy",
+    "name": "UI_attack_editor",
+    "path": "folders/Sprites/UI_attack_editor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_frame",

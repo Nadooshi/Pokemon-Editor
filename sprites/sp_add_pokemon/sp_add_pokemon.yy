@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"626aa0d3-ade9-4ec9-82bd-a9063fe35c89","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "UI_card_editor",
-    "path": "folders/Sprites/UI_card_editor.yy",
+    "name": "UI_attack_editor",
+    "path": "folders/Sprites/UI_attack_editor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_add_pokemon",

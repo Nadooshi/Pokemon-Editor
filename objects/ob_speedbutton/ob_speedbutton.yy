@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_beautyMedButton",
-    "path": "sprites/sp_beautyMedButton/sp_beautyMedButton.yy",
+    "name": "sp_red_button",
+    "path": "sprites/sp_red_button/sp_red_button.yy",
   },
   "solid": false,
   "visible": true,

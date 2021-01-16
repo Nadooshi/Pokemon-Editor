@@ -4,7 +4,8 @@
 event_inherited();
 
 var _value = ds_map_find_value(current_action, parameter_name)
-if is_undefined(_value) _value=0
+if is_undefined(_value)
+	_value=0
 
 var _group_index = group_index
 with ob_speedbutton

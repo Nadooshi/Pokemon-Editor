@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "ob_speedbutton",
-    "path": "objects/ob_speedbutton/ob_speedbutton.yy",
+    "name": "ob_switch_button",
+    "path": "objects/ob_switch_button/ob_switch_button.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,7 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"ob_redbutton","path":"objects/ob_redbutton/ob_redbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"ob_redbutton","path":"objects/ob_redbutton/ob_redbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"ob_redbutton","path":"objects/ob_redbutton/ob_redbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
