@@ -7,6 +7,7 @@ switch room_mode {
 		break;
 	}
 	case 2: {
+		ds_list_clear(logging)
 		current_rate = sc_rate_pokemon(current_pokemon)
 		break;
 	}
