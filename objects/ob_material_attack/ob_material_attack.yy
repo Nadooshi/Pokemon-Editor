@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_material",
-    "path": "sprites/sp_material/sp_material.yy",
+    "name": "sp_elemental",
+    "path": "sprites/sp_elemental/sp_elemental.yy",
   },
   "solid": false,
   "visible": true,

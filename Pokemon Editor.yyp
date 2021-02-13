@@ -1,7 +1,6 @@
 {
   "resources": [
     {"id":{"name":"sp_elemental","path":"sprites/sp_elemental/sp_elemental.yy",},"order":0,},
-    {"id":{"name":"sp_material","path":"sprites/sp_material/sp_material.yy",},"order":1,},
     {"id":{"name":"sp_weather","path":"sprites/sp_weather/sp_weather.yy",},"order":2,},
     {"id":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"order":3,},
     {"id":{"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},"order":4,},
@@ -385,6 +384,7 @@
     {"id":{"name":"rm_element_table","path":"rooms/rm_element_table/rm_element_table.yy",},"order":7,},
     {"id":{"name":"rm_ability_editor","path":"rooms/rm_ability_editor/rm_ability_editor.yy",},"order":8,},
     {"id":{"name":"rm_select_anim","path":"rooms/rm_select_anim/rm_select_anim.yy",},"order":0,},
+    {"id":{"name":"sp_material","path":"sprites/sp_material/sp_material.yy",},"order":1,},
     {"id":{"name":"rm_select_p_anim","path":"rooms/rm_select_p_anim/rm_select_p_anim.yy",},"order":1,},
     {"id":{"name":"rm_select_ex_anim","path":"rooms/rm_select_ex_anim/rm_select_ex_anim.yy",},"order":2,},
     {"id":{"name":"note0","path":"notes/note0/note0.yy",},"order":0,},

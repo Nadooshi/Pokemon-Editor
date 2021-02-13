@@ -203,14 +203,6 @@ function sc_rate_action(_a_map, _abil_map) {
 
 	for (var i = 0; i < 5; i++)
 		_val[i] = 0
-	//=======================================================================================
-	_val[0] = _a_map[? "repeatable"] 
-	if _val[0] > 0 {
-		_cur_rate *= 0.5
-		sc_logging("Calc_rating", _a_name , "attack disposable - rate * 0.5")
-	} else {
-		sc_logging("Calc_rating", _a_name , "attack reusable - rate no changed")
-	}
 
 	//=======================================================================================
 
@@ -251,6 +243,15 @@ function sc_rate_action(_a_map, _abil_map) {
 
 	if not is_undefined(_abil_map) {
 		ds_map_destroy(_abil_map)	
+	}
+
+	//=======================================================================================
+	_val[0] = _a_map[? "repeatable"] 
+	if _val[0] > 0 {
+		_cur_rate *= 0.5
+		sc_logging("Calc_rating", _a_name , "attack disposable - rate * 0.5")
+	} else {
+		sc_logging("Calc_rating", _a_name , "attack reusable - rate no changed")
 	}
 
 	//=======================================================================================

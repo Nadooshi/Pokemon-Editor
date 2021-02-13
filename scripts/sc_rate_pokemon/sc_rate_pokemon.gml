@@ -161,8 +161,8 @@ switch _abil_map[? "state"]{
 		_val[1] = 5
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state incineration +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state incineration +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 2: {	// ожог
@@ -173,27 +173,27 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 3: {	// кровотечение
-		_val[1] = 7
+		_val[1] = 4
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state bleeding +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state bleeding +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 4: {	// пиявка
-		_val[1] = 10
+		_val[1] = 5
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state leech +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state leech +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 5: {	// отравление
 		_val[1] = 6
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state infestation +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state infestation +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 6: {	// парализация
@@ -204,19 +204,19 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 7: {	// +1 к атаке
-		_val[1] = 7
+		_val[1] = 4.3
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state gain damage +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state gain damage +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 8: {	// слабость
-		_val[1] = 7
+		_val[1] = 5
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state weak +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state weak +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 9: {	// +1 к ОД
@@ -239,8 +239,8 @@ switch _abil_map[? "state"]{
 		_val[1] = 7
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] + _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state trap +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] + _val[2] + (7 * _val[3])) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state trap +", ((_val[1] + _val[2] + (7 * _val[3])) * _val[0]))
 		break
 	}
 	case 12: {	// случайный урон
@@ -271,24 +271,24 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 13: {	// усыпление
-		_val[1] = 20
+		_val[1] = 4.6
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + 2 * _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state lulling +", ((_val[1] + 2 * _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state lulling +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 14: {	// ошеломление
-		_val[1] = 30
+		_val[1] = 9.7
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + 5 * _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state stun +", ((_val[1] + 5 * _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state stun +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 15: {	// ужас
-		_val[1] = 15
+		_val[1] = 9.3
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state fear +", ((_val[1] + _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state fear +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 16: {	// побег
@@ -306,26 +306,26 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 18: {	// отвращение
-		_val[1] = 25
+		_val[1] = 8
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + 5 * _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state disgust +", ((_val[1] + 5 * _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state disgust +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 19: {	// прицел
-		_val[1] = 30 
+		_val[1] = 7.2 
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state target +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state target +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 20: {	// неуклюжесть
-		_val[1] = 30 
+		_val[1] = 7.3
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state loser +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state loser +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 21: {	// отдача
@@ -339,37 +339,37 @@ switch _abil_map[? "state"]{
 		_val[1] = 10
 		_val[2] = _abil_map[? "state_value"] * 0.2
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] + _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state explode +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += ((_val[1] + _val[2]) * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state explode +", (((_val[1] + _val[2]) * _val[3]) * _val[0]))
 		break
 	}
 	case 23: {	// месть
 		_val[1] = 7
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state revenge +" , ((_val[1] + _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state revenge +" , ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 24: {	// камикадзе
 		break
 	}
 	case 25: {	// гипноз
-		_val[1] = 35
+		_val[1] = 16
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_cur_rate += _val[1] * _val[2] * _val[0]
 		sc_logging("Calc_rating", _a_name , "state Hypnotize +", (_val[1] * _val[2] * _val[0]))
 		break
 	}
 	case 26: {	// смущение
-		_val[1] = 25
+		_val[1] = 9.5
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state confusion +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state confusion +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 27: {	// телекинез
-		_val[1] = 15
+		_val[1] = 30
 		_val[2] = 50 / _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
@@ -377,111 +377,111 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 28: {	// телепортация
-		_val[1] = 20 
-		_val[2] = _abil_map[? "state_value"]
+		_val[1] = 40
+		_val[2] = 50 /_abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
 		sc_logging("Calc_rating", _a_name , "state teleport +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 29: {	// буст ближняя
-		_val[1] = 3 
+		_val[1] = 3.8
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state meleeup +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state meleeup +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 30: {	// буст дальняя
-		_val[1] = 4
+		_val[1] = 4.1
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state rangeup +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state rangeup +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 31: {	// лечение 1
-		_val[1] = 15
+		_val[1] = 2
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state heal +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state heal +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 32: {	// лечение 2
-		_val[1] = 25
+		_val[1] = 3
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state cure +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state cure +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 33: {	// лечение 3
-		_val[1] = 40
+		_val[1] = 4
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state medicine +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state medicine +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 34: {	// снятие эффектов
-		_val[1] = 30
+		_val[1] = 4
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state clear +", ((_val[1] + _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state clear +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 35: {	// уверенность
-		_val[1] = 25
+		_val[1] = 3
 		_val[2] = _abil_map[? "state_value"]
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state confidance +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state confidance +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 36: {	// отражение
-		_val[1] = 20
+		_val[1] = 17
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + 3 * _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state reflect +", ((_val[1] + 3 * _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state reflect +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 37: {	// поглощение
-		_val[1] = 15
+		_val[1] = 5
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state block +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state block +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 38: {	// ловкость
-		_val[1] = 20
+		_val[1] = 7.8
 		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state dextery +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state dextery +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 	case 39: {	// обоюдный урон
 		_val[1] = 5
 		_val[2] = _abil_map[? "state_value"] * 0.1
-		_cur_rate -= (_val[1] + _val[2]) * (1 - _val[0]) // minus
-		sc_logging("Calc_rating", _a_name , "state desperate -", ((_val[1] + _val[2]) * 1 - _val[0]))
+		_cur_rate -= (_val[1] * _val[2]) * (1 - _val[0]) // minus
+		sc_logging("Calc_rating", _a_name , "state desperate -", ((_val[1] * _val[2]) * 1 - _val[0]))
 		break
 	}
 	case 40: {	// трещина
 		_val[1] = 25
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state wreak +", ((_val[1] + _val[2]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state wreak +", ((_val[1] * _val[2]) * _val[0]))
 		break
 	}
 	case 41: {	// барьер
-		_val[1] = 15 
-		_val[2] = _abil_map[? "state_value"] * 0.15
+		_val[1] = 1.4
+		_val[2] = _abil_map[? "state_value"] * 0.1
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
-		_cur_rate += (_val[1] + _val[2] * _val[3]) * _val[0]
-		sc_logging("Calc_rating", _a_name , "state barierre +", ((_val[1] + _val[2] * _val[3]) * _val[0]))
+		_cur_rate += (_val[1] * _val[2] * _val[3]) * _val[0]
+		sc_logging("Calc_rating", _a_name , "state barierre +", ((_val[1] * _val[2] * _val[3]) * _val[0]))
 		break
 	}
 }
