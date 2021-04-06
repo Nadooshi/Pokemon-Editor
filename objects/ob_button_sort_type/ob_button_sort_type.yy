@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_beautyMedButton",
-    "path": "sprites/sp_beautyMedButton/sp_beautyMedButton.yy",
+    "name": "sp_beautySmallButton",
+    "path": "sprites/sp_beautySmallButton/sp_beautySmallButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"ob_button_sort_type","path":"objects/ob_button_sort_type/ob_button_sort_type.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"ob_button_sort_type","path":"objects/ob_button_sort_type/ob_button_sort_type.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

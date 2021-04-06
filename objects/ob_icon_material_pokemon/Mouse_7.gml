@@ -7,7 +7,7 @@ event_inherited();
 
 var sq = ceil(sqrt(_MATERIAL.count))
 var rows = ceil(_MATERIAL.count/sq)
-var popup_frame = sc_create_popup_frame(id, 750, y, 96*sq+32, 96*rows+32)
+var popup_frame = sc_create_popup_frame(id, 525, 200, 96*sq+32, 96*rows+32)
 
 var _count = 0
 for (var i=0; i<sq; i++)
