@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sp_biomes",
-    "path": "sprites/sp_biomes/sp_biomes.yy",
+    "name": "sp_beautyMedButton",
+    "path": "sprites/sp_beautyMedButton/sp_beautyMedButton.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "ob_biome_ability",
-    "path": "objects/ob_biome_ability/ob_biome_ability.yy",
+    "name": "ob_button",
+    "path": "objects/ob_button/ob_button.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Abilities",
-    "path": "folders/Objects/Abilities.yy",
+    "name": "Button",
+    "path": "folders/Objects/Abilities/Button.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_biomes",
+  "name": "ob_button_abilities_fix_biome",
   "tags": [],
   "resourceType": "GMObject",
 }

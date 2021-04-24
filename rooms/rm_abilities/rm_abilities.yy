@@ -34,6 +34,9 @@
         {"properties":[
             {"propertyId":{"name":"caption","path":"objects/ob_button/ob_button.yy",},"objectId":{"name":"ob_button","path":"objects/ob_button/ob_button.yy",},"value":"by state","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"ob_button_abilities_sort_state","path":"objects/ob_button_abilities_sort_state/ob_button_abilities_sort_state.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.9375,"scaleY":0.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":496.0,"y":0.0,"resourceVersion":"1.0","name":"inst_284DA6C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"caption","path":"objects/ob_button/ob_button.yy",},"objectId":{"name":"ob_button","path":"objects/ob_button/ob_button.yy",},"value":"fix biomes","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"ob_button_abilities_fix_biome","path":"objects/ob_button_abilities_fix_biome/ob_button_abilities_fix_biome.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.8125,"scaleY":0.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1400.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7BC2070D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Buttons","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Elements","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Frames","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -51,6 +54,7 @@
     {"name":"inst_56B3AE15","path":"rooms/rm_abilities/rm_abilities.yy",},
     {"name":"inst_263D13F1","path":"rooms/rm_abilities/rm_abilities.yy",},
     {"name":"inst_284DA6C","path":"rooms/rm_abilities/rm_abilities.yy",},
+    {"name":"inst_7BC2070D","path":"rooms/rm_abilities/rm_abilities.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -39,6 +39,7 @@
     {"id":{"name":"sp_attack_5","path":"sprites/sp_attack_5/sp_attack_5.yy",},"order":5,},
     {"id":{"name":"sp_attack_6","path":"sprites/sp_attack_6/sp_attack_6.yy",},"order":6,},
     {"id":{"name":"sp_attack_7","path":"sprites/sp_attack_7/sp_attack_7.yy",},"order":7,},
+    {"id":{"name":"ob_button_abilities_fix_biome","path":"objects/ob_button_abilities_fix_biome/ob_button_abilities_fix_biome.yy",},"order":7,},
     {"id":{"name":"sp_attack_8","path":"sprites/sp_attack_8/sp_attack_8.yy",},"order":8,},
     {"id":{"name":"sp_attack_9","path":"sprites/sp_attack_9/sp_attack_9.yy",},"order":9,},
     {"id":{"name":"sp_attack_10","path":"sprites/sp_attack_10/sp_attack_10.yy",},"order":10,},
@@ -484,7 +485,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"nsfs-doc.html","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "Pokemon Editor",

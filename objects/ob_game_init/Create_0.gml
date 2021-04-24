@@ -13,7 +13,7 @@ enum _ELEMENTAL {
 	wind,
 	lunar,
 	solar,
-	flesh, 
+	flesh,
 	ghost,
 	plant,
 	steel,
