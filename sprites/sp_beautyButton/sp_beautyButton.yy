@@ -25,11 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"6ddcb78b-e766-46b6-a960-d0f6a3414340","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"94137658-eaa1-4d45-b415-806ac017c354","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"aefc4b3c-78f4-4aec-945a-5120ba7db0c2","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"0e81724d-ecb8-4fe6-b75a-d04ab7cabc4f","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"LayerId":{"name":"a98b8ff0-b89b-48fe-a294-352c80346982","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_beautyButton","path":"sprites/sp_beautyButton/sp_beautyButton.yy",},"resourceVersion":"1.0","name":"22e128ad-14e2-4807-b364-6a1c4d11d43d","tags":[],"resourceType":"GMSpriteFrame",},
   ],

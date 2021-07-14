@@ -25,6 +25,7 @@ function sc_clear_pokemon(argument0) {
 		_ds[? "force"] = 0		// image_index from sp_icon_force
 		_ds[? "stage"] = 1      // 0 - alone, 1,2,3 - stages of evolution, 4 - MEGA stage
 		_ds[? "rating"] = 0
+		_ds[? "habitat"] = _HABITAT._all
 	}
 
 

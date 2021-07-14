@@ -107,7 +107,7 @@
         {"properties":[
             {"propertyId":{"name":"allow_all_up","path":"objects/ob_speedbutton/ob_speedbutton.yy",},"objectId":{"name":"ob_speedbutton","path":"objects/ob_speedbutton/ob_speedbutton.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"group_index","path":"objects/ob_speedbutton/ob_speedbutton.yy",},"objectId":{"name":"ob_speedbutton","path":"objects/ob_speedbutton/ob_speedbutton.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"hint","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"underground /ground /fly","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"hint","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"underground / ground / fly","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"index","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"parameter_name","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"position_stage","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"ob_switch_button","path":"objects/ob_switch_button/ob_switch_button.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.07746589,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":576.0,"resourceVersion":"1.0","name":"inst_3280D6E","tags":[],"resourceType":"GMRInstance",},
@@ -118,6 +118,12 @@
             {"propertyId":{"name":"index","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"value","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"ob_switch_button","path":"objects/ob_switch_button/ob_switch_button.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.37789655,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":96.0,"resourceVersion":"1.0","name":"inst_5B13936A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"parameter_name","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"habitat","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"index","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"caption","path":"objects/ob_button/ob_button.yy",},"objectId":{"name":"ob_button","path":"objects/ob_button/ob_button.yy",},"value":"Every where","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"hint","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"Every where / ground / water","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"ob_switch_button","path":"objects/ob_switch_button/ob_switch_button.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.36363626,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":400.0,"resourceVersion":"1.0","name":"inst_67193411","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Buttons","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"ob_picture_face","path":"objects/ob_picture_face/ob_picture_face.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":0.4699219,"scaleY":0.4074219,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":176.0,"y":176.0,"resourceVersion":"1.0","name":"pc_face","tags":[],"resourceType":"GMRInstance",},
@@ -178,6 +184,7 @@
     {"name":"picture_back_elemental","path":"rooms/rm_editor/rm_editor.yy",},
     {"name":"inst_6645BAB0","path":"rooms/rm_editor/rm_editor.yy",},
     {"name":"inst_58D2792E","path":"rooms/rm_editor/rm_editor.yy",},
+    {"name":"inst_67193411","path":"rooms/rm_editor/rm_editor.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

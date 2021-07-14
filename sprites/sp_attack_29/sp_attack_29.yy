@@ -203,6 +203,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"bf72f36f-415e-4aea-9f1e-d23971613d3c","tags":[],"resourceType":"GMImageLayer",},
     {"visible":false,"isLocked":true,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1a842a3e-8cd4-4f64-8135-aff5dd7f4344","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Attack_animation",
     "path": "folders/Sprites/Attack_animation.yy",

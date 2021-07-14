@@ -303,6 +303,13 @@ enum _SIZE {
 	big,
 	giant
 }
+
+enum _HABITAT{
+	_all,
+	_ground,
+	_water
+}
+
 globalvar size_text var;
 size_text[_SIZE.tiny	] = "tiny"
 size_text[_SIZE.normal	] = "normal"

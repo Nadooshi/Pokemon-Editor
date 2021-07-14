@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"626aa0d3-ade9-4ec9-82bd-a9063fe35c89","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "UI_attack_editor",
     "path": "folders/Sprites/UI_attack_editor.yy",

@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":75.0,"displayName":"default","resourceVersion":"1.0","name":"2bdb8b4e-f69a-4747-aa02-931a8aa7400d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Spectacle pic",
     "path": "folders/Sprites/Spectacle pic.yy",
