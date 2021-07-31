@@ -31,12 +31,14 @@ var _temp = ds_map_create() // temporary pokemon
 with ob_pokemon_icon {
 	sc_load_pokemon(value, _temp)
 	if (not is_undefined(_temp[? "face"]) or (_temp[? "face"]="") )
-		image_index = _temp[? "face"] + 0.01
+		image_index = _temp[? "face"] + 0.5
 }
 with ob_rating_star {
 	sc_load_pokemon(title, _temp)
 	if (not is_undefined(_temp[? "rating"]) or (_temp[? "rating"]="") )
-		caption = string(ceil(_temp[? "rating"]*0.01))
+		value = _temp[? "rating"]
+		hint = string(value)
+		caption = string(ceil(value*0.01))
 }
 ds_map_destroy(_temp)
 

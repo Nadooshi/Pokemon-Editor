@@ -1,14 +1,9 @@
-function sc_calculate_formula(argument0, argument1, argument2, argument3) {
+function sc_calculate_formula(mode, force, lvl, pow) {
 	// calculate recommended any value for show hints
 	/// @arg mode
 	/// @arg force
 	/// @arg level
 	/// @arg power
-
-	var mode = argument0
-	var force = argument1
-	var lvl = argument2
-	var pow = argument3
 
 	if mode = 0 exit;
 	if is_undefined(force) force = 0
@@ -45,7 +40,6 @@ function sc_calculate_formula(argument0, argument1, argument2, argument3) {
 	}
 
 	switch (mode) {
-		case 0: return result
 		case 1:  // calculate health			
 		case 2: {
 			result = custom._health * coef[force] + lvl * coef_lvl[force] * custom._health * coef[force]

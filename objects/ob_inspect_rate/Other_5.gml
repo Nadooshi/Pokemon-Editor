@@ -1,4 +1,5 @@
 /// @desc
+fname = -1
 switch room_mode {
 	case 1:
 		fname = file_text_open_write("log_action_" + current_action[? "name"] + ".txt")

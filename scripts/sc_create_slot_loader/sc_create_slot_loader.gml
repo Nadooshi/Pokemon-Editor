@@ -1,10 +1,7 @@
 /// @arg x
 /// @arg y
 /// @arg name
-function sc_create_slot_loader(argument0, argument1, argument2) {
-	var _x = argument0
-	var _y = argument1
-	var _name = argument2
+function sc_create_slot_loader(_x, _y, _name) {
 	var _id = noone
 
 	with instance_create_layer(_x, _y, "Pokeballs", ob_slot) {
@@ -29,7 +26,6 @@ function sc_create_slot_loader(argument0, argument1, argument2) {
 	}
 	with instance_create_layer(_x+20,_y-48, "Clickable", ob_rating_star) {
 		title = _name
-		caption = "0"
 	}
 
 	if edit_mode

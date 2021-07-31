@@ -1,4 +1,4 @@
 /// @desc 
 
-caption = "\"" + parent.name +"\""
+caption = "\"" + parent.name + "\""
 

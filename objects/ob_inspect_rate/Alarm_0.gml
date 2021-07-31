@@ -11,6 +11,11 @@ switch room_mode {
 		current_rate = sc_rate_pokemon(current_pokemon)
 		break;
 	}
+	case 3: {
+		ds_list_clear(logging)
+		current_rate = sc_calc_rate_ability_state(dedicated_map, undefined, 10) // 10 is "minimum" damage in game
+		break;
+	}
 }
 if round(old_rate * 0.01) != round(current_rate*0.01)
 	with ob_rating_num {
@@ -42,10 +47,11 @@ if current_rate > 500
 
 switch room_mode {
 	case 1: 
-		ds_map_set(current_action, "rating", current_rate)
-
+		current_action[?"rating"] = current_rate
 	case 2:
-		ds_map_set(current_pokemon, "rating", current_rate)
+		current_pokemon[?"rating"] = current_rate
+	case 3:
+		dedicated_map[? "rating"] = current_rate
 }
 
 old_rate = current_rate

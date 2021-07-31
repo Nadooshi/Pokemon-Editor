@@ -121,7 +121,7 @@ function sc_rate_action(_a_map, _abil_map) {
 	switch ds_map_find_value(_a_map,"bullet_phys") {
 		case _BULLET_PH.custom:{
 			_cur_rate += 15
-			sc_logging("Calc_rating", _a_name , "bullet phys custom +", 15)
+			sc_logging("Calc_rating", _a_name , "bullet phys custom", 15)
 			break;
 		}
 		case _BULLET_PH.soft:{
@@ -131,17 +131,17 @@ function sc_rate_action(_a_map, _abil_map) {
 		}
 		case _BULLET_PH.chain:{
 			_cur_rate += 55
-			sc_logging("Calc_rating", _a_name , "bullet phys chain +", 55)
+			sc_logging("Calc_rating", _a_name , "bullet phys chain", 55)
 			break;
 		}
 		case _BULLET_PH.piercer:{
 			_cur_rate += 25
-			sc_logging("Calc_rating", _a_name , "bullet phys piercer +", 25)
+			sc_logging("Calc_rating", _a_name , "bullet phys piercer", 25)
 			break;
 		}
 		case _BULLET_PH.bowl:{
 			_cur_rate += 35
-			sc_logging("Calc_rating", _a_name , "bullet phys bowl +", 35)
+			sc_logging("Calc_rating", _a_name , "bullet phys bowl", 35)
 			break;
 		}
 	}
@@ -172,7 +172,7 @@ function sc_rate_action(_a_map, _abil_map) {
 		_iFrom = _iFrom << 1
 	}
 	_cur_rate += _val[0] 
-	sc_logging("Calc_rating", _a_name , "attack targets +", _val[0])
+	sc_logging("Calc_rating", _a_name , "attack targets", _val[0])
 	
 	_val[0] = 0
 
@@ -184,12 +184,12 @@ function sc_rate_action(_a_map, _abil_map) {
 	_val[3] = ds_map_find_value(_a_map, "damage")
 	_cur_rate += (50 - _val[1]) //for ap
 	_val[4] = _val[3] / _val[2] // percentage ratio of damage
-	sc_logging("Calc_rating", _a_name , "ap value +", (50 - _val[1]))
+	sc_logging("Calc_rating", _a_name , "ap value", (50 - _val[1]))
 
 	if _val[3] != 0 
 		if _type = _ATTACK_TYPE.barrier {
 			_cur_rate += _val[3]*_val[4]
-			sc_logging("Calc_rating", _a_name , "damage value +", (_val[3]*_val[4]))
+			sc_logging("Calc_rating", _a_name , "damage value", (_val[3]*_val[4]))
 		} else {
 			_cur_rate = _cur_rate*_val[4]
 			sc_logging("Calc_rating", _a_name , "damage value *", (_val[4]))

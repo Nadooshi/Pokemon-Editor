@@ -8,9 +8,5 @@ else
 	
 hint = string(value)	
 caption = string(ceil(value*0.01))
-if value > 500
-	image_blend = c_purple
-if value < 0
-	image_blend = c_red
 
 
