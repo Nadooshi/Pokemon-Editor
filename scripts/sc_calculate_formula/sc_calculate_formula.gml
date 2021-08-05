@@ -34,34 +34,25 @@ function sc_calculate_formula(mode, force, lvl, pow) {
 	coef_lvl[_FORCE.elite	 ] = 0.0368
 	coef_lvl[_FORCE.legendary] = 0.0343
 	coef_lvl[_FORCE.incredible] = 0.032
-	enum custom {
-		_health = 150, //custom 1st healt proferred force
-		_dmg = 100,
+	enum norm{
+		_health = 150, //custom 1st healt elite force
+		_dmg = 100
 	}
 
 	switch (mode) {
 		case 1:  // calculate health			
-		case 2: {
-			result = custom._health * coef[force] + lvl * coef_lvl[force] * custom._health * coef[force]
+		case 2: 
+			result = norm._health * coef[force] + lvl * coef_lvl[force] * norm._health * coef[force]
 			break;
-		}
-		case 3: { // calculate damage
-			result = (custom._dmg * coef[force] + (lvl * coef_lvl[force] * custom._dmg * coef[force])) * 0.01 * pow
+		case 3:  // calculate damage
+			result = (norm._dmg * coef[force] + (lvl * coef_lvl[force] * norm._dmg * coef[force])) * 0.01 * pow
 			break;
-		}
-		case 4: {
-			result = (custom._dmg*coef[_FORCE.preferred] + (lvl*coef_lvl[_FORCE.preferred]*custom._dmg*coef[_FORCE.preferred])) * 0.01 * pow
+		case 4:  // nouse mode
+			result = (norm._dmg * coef[_FORCE.elite] + (lvl * coef_lvl[_FORCE.elite] * norm._dmg * coef[_FORCE.elite])) * 0.01 * pow
 			break;
-		}
 	}
 
-
-
-
-
 	return result
-	
-	
-
-
 }
+
+

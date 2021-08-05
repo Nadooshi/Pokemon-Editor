@@ -7,6 +7,9 @@ switch room_mode {
 	case 2:
 		fname = file_text_open_write("log_pokemon_" + current_pokemon[? "title"] + ".txt")
 		break;
+	case 3:
+		fname = file_text_open_write("log_state_" + dedicated_map[? "name"] + ".txt")
+		break;
 }
 if fname = -1 {
 	show_message("Log file not created!")

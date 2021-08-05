@@ -147,6 +147,7 @@
     {"id":{"name":"sp_rating_5","path":"sprites/sp_rating_5/sp_rating_5.yy",},"order":5,},
     {"id":{"name":"sp_rating_6","path":"sprites/sp_rating_6/sp_rating_6.yy",},"order":6,},
     {"id":{"name":"sp_rating_star","path":"sprites/sp_rating_star/sp_rating_star.yy",},"order":7,},
+    {"id":{"name":"ob_button_calc_ability_rate","path":"objects/ob_button_calc_ability_rate/ob_button_calc_ability_rate.yy",},"order":3,},
     {"id":{"name":"sp_randomcube","path":"sprites/sp_randomcube/sp_randomcube.yy",},"order":14,},
     {"id":{"name":"sp_yesno","path":"sprites/sp_yesno/sp_yesno.yy",},"order":15,},
     {"id":{"name":"sp_act_icon","path":"sprites/sp_act_icon/sp_act_icon.yy",},"order":16,},

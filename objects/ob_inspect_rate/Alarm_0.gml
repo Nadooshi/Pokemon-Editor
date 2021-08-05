@@ -13,7 +13,7 @@ switch room_mode {
 	}
 	case 3: {
 		ds_list_clear(logging)
-		current_rate = sc_calc_rate_ability_state(dedicated_map, undefined, 10) // 10 is "minimum" damage in game
+		current_rate = sc_calc_rate_ability_state(dedicated_map, undefined, undefined, 10) // 10 is "minimum" damage in game
 		break;
 	}
 }
