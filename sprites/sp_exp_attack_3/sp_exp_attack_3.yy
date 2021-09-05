@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sp_exp_attack_3","path":"sprites/sp_exp_attack_3/sp_exp_attack_3.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sp_exp_attack_3",
     "tags": [],
     "resourceType": "GMSequence",
   },
