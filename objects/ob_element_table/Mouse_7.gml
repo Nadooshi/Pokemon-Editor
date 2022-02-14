@@ -23,6 +23,7 @@ for (var k=0; k<sq; k++) {
 	obj.parent = popup_frame
 	obj.base_elem_index = parent.index
 	obj.hint = elemental_text[_count]
+	obj.table_use = table_use
 	popup_frame.ui_objects[popup_frame.ui_objects_count] = obj
 	popup_frame.ui_objects_count++
 	_count++

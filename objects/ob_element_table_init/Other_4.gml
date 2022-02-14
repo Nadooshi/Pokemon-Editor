@@ -45,7 +45,15 @@ with ob_element_picture {
 	image_index = parent.index
 }
 
-with ob_element_table
+with ob_element_table {
+	switch other.mode {
+		case 0:
+			table_use = element_table
+			break;
+		case 1:
+			table_use = aura_table
+			break;
+	}
 	event_perform(ev_other, ev_user0)
-
+}
 alarm[0] = 150

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_beautyBigButton",
-    "path": "sprites/sp_beautyBigButton/sp_beautyBigButton.yy",
+    "name": "sp_beautyMedButton",
+    "path": "sprites/sp_beautyMedButton/sp_beautyMedButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -14,7 +14,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -26,14 +26,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"index","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Start",
-    "path": "folders/Objects/Start.yy",
+    "name": "Element table",
+    "path": "folders/Objects/Element table.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_button_element_table",
+  "name": "ob_erase_table",
   "tags": [],
   "resourceType": "GMObject",
 }

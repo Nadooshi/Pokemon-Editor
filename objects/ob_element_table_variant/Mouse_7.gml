@@ -4,11 +4,9 @@
 event_inherited();
 
 var _index = real(parent.parent.parameter_name)
-var _elem = element_table[@ base_elem_index]
+var _elem = table_use[@ base_elem_index]
 _elem[@ _index] = value
 
-//with parent.parent
-//	event_perform(ev_other, ev_user2)
 
 with ob_frame_element_table 	
 	event_perform(ev_other, ev_user0)

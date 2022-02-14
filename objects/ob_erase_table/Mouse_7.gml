@@ -1,12 +1,6 @@
-/// @desc 
-
-// Inherit the parent event
-if popup_appeared
-	exit
-
-event_inherited();
-var _arr_save = noone
-var _reg_ini = ""
+/// @desc
+var _arr_save
+var _reg_ini
 switch index {
 	case 0:
 		_arr_save = element_table
@@ -17,19 +11,21 @@ switch index {
 		_reg_ini = "aura_table"
 	break;
 }
-var _ok = true
-with ob_element_table
-	_ok = _ok and valid
 	
-if not _ok
-	_ok = show_question("You have some conflicts in the table!\nSave anyway?")
+var _ok = show_question("Do you really want to erase the table?\n This action cannot be cancelled!")
 	
 if _ok {
 	ini_open(path)
-		for (var i=0; i<array_length_1d(_arr_save); i++)
+		for (var i=0; i<array_length_1d(_arr_save); i++) {
+			_arr_save[i] = array_create(3, _ELEMENTAL.none)
 			ini_write_string(_reg_ini, string(i), array_to_string(_arr_save[i]))
+		}
 	ini_close()
 	// reload bini
 	bini_unload()
 	bini_load(path)
+	
 }
+
+
+

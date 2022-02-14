@@ -7,4 +7,4 @@ edit_mode = true
 selection = noone
 
 ds_stack_push(room_stack, room)
-room_goto(rm_element_table)
+room_goto(rm_aura_element_table)

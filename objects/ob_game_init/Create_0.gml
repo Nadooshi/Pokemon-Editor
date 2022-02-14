@@ -392,6 +392,11 @@ element_table = array_create(_ELEMENTAL.count-1)
 for (var i=0; i<array_length_1d(element_table); i++)
 	element_table[i] = array_create(3, _ELEMENTAL.none)
 
+globalvar aura_table;
+aura_table = array_create(_ELEMENTAL.count-1)
+for (var i=0; i<array_length_1d(aura_table); i++)
+	aura_table[i] = array_create(3, _ELEMENTAL.none)
+
 globalvar popup_appeared; popup_appeared = false
 
 sc_init_globals()
@@ -411,12 +416,20 @@ ds_map_read(ability_list, bini_sections[? "abilities"][? "ability_list"])
 ability_count = ds_map_size(ability_list)	
 ds_map_read(pokemon_list, bini_sections[? "pokemons"][? "pokemon_list"])
 pokemon_list_count = ds_map_size(pokemon_list)
+
 var _arr = 0
 if ds_map_exists(bini_sections, "element_table")
 for (var i=0; i<array_length_1d(element_table); i++) {
 	_arr = array_from_string( bini_sections[? "element_table"][? string(i)])
 	element_table[i] = _arr
 }
+_arr = 0
+if ds_map_exists(bini_sections, "aura_table")
+for (var i=0; i<array_length_1d(aura_table); i++) {
+	_arr = array_from_string( bini_sections[? "aura_table"][? string(i)])
+	aura_table[i] = _arr
+}
+
 
 globalvar logging;
 logging = ds_list_create()
