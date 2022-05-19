@@ -26,6 +26,8 @@ if ds_exists(pokemon_list, ds_type_map)
 if ds_exists(pokemon_list, ds_type_list)
 	ds_list_destroy(pokemon_list)
 
+ds_map_destroy(evolution_tree)
+
 sc_cleanup_globals()
 
 bini_unload()

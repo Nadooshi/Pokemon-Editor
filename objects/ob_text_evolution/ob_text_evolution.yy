@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sp_beatyFrame3",
-    "path": "sprites/sp_beatyFrame3/sp_beatyFrame3.yy",
+    "name": "sp_beautyMedButton",
+    "path": "sprites/sp_beautyMedButton/sp_beautyMedButton.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "ob_text",
-    "path": "objects/ob_text/ob_text.yy",
+    "name": "ob_button",
+    "path": "objects/ob_button/ob_button.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,7 +25,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":5,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],

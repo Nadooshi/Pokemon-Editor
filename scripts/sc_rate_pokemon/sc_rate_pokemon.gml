@@ -30,8 +30,8 @@ function sc_rate_pokemon(_pokemon_map) {
 	//==============================================================
 	var _p_name = _pokemon_map[? "title"]
 	sc_logging ("Calculate raiting for", _p_name, ":", undefined)
-	sc_logging("-----------------------------------------------------")
-	sc_logging("Survive rating:")
+	sc_logging("-----------------------------------------------------", undefined, undefined, undefined)
+	sc_logging("Survive rating:", undefined, undefined, undefined)
 
 	var _s
 	switch _pokemon_map[? "size"] {
@@ -103,7 +103,7 @@ function sc_rate_pokemon(_pokemon_map) {
 
 	rate_survive = _cur_rate
 	sc_logging("Final rating", _p_name , "of survival", rate_survive)
-	sc_logging("-----------------------------------------------------")
+	sc_logging("-----------------------------------------------------", undefined, undefined, undefined)
 
 	//==============================================================
 	var _a_rate = 0
@@ -114,7 +114,7 @@ function sc_rate_pokemon(_pokemon_map) {
 	var _a_name = ds_map_find_first(_pokemon_map[? "actions"])
 	var _temp_map = ds_map_create()
 	var _count = 0
-	sc_logging("Battle rating:")
+	sc_logging("Battle rating:", undefined, undefined, undefined)
 	
 	while not is_undefined(_a_name) {
 		_count++
@@ -146,7 +146,7 @@ function sc_rate_pokemon(_pokemon_map) {
 	sc_logging("	", "ideal damage average value", undefined, (abs_dmg / _count))
 	sc_logging("	", "Difference of real/ideal damage", string(_val[2]* 100) + "%", undefined)
 	sc_logging("Finat rating", _p_name, "of battle", rate_battle)
-	sc_logging("-----------------------------------------------------")
+	sc_logging("-----------------------------------------------------", undefined, undefined, undefined)
 	
 	_cur_rate += rate_battle
 
@@ -159,7 +159,7 @@ function sc_rate_pokemon(_pokemon_map) {
 	if not is_undefined(_pokemon_map[? "health"])
 		_val[0] = _pokemon_map[? "health"]
 		
-	_val[1] = sc_calculate_formula(1, _FORCE.elite, pr_lvl)
+	_val[1] = sc_calculate_formula(1, _FORCE.elite, pr_lvl, undefined)
 	_val[2] = _val[0] / _val[1] // percentage ratio of health
 	sc_logging("Custom health value", _val[0], undefined, undefined)
 	sc_logging("Ideal health value", "(Elite)",_val[1], undefined)
@@ -171,19 +171,19 @@ function sc_rate_pokemon(_pokemon_map) {
 	//==============================================================
 	switch _pokemon_map[? "habitat"] {
 		case _HABITAT._all:
-			sc_logging(_p_name, "has habitat everywhere.")
+			sc_logging(_p_name, "has habitat everywhere.", undefined, undefined)
 			break;
 		case _HABITAT._ground:
-			sc_logging(_p_name, "has habitat only on ground.", "Rating decrease on 15%")
+			sc_logging(_p_name, "has habitat only on ground.", "Rating decrease on 15%", undefined)
 			_cur_rate *= 0.85
 			break;
 		case _HABITAT._water:
-			sc_logging(_p_name, "has habitat only on water.", "Rating decrease on 30%")
+			sc_logging(_p_name, "has habitat only on water.", "Rating decrease on 30%", undefined)
 			_cur_rate *= 0.7
 			break;
 	}
 	
-	sc_logging("-----------------------------------------------------")
+	sc_logging("-----------------------------------------------------", undefined, undefined, undefined)
 	sc_logging("Final rating", "of pokemon" , _p_name, _cur_rate)
 	return _cur_rate
 }
@@ -217,9 +217,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Incineration", (_mod_rate * _role))
-		sc_logging("Cost state Incineration", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "fire damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Incineration", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "fire damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 2: {	// ожог
@@ -227,8 +227,8 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Scar", (_mod_rate * _role))
-		sc_logging("Cost state Scar", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Scar", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 3: {	// кровотечение
@@ -237,9 +237,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Bleeding", (_mod_rate * _role))
-		sc_logging("Cost state Bleeding", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "flash damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Bleeding", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "flash damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 4: {	// пиявка
@@ -248,9 +248,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Leech life", (_mod_rate * _role))
-		sc_logging("Cost state Leech life", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "flash damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Leech life", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "flash damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 5: {	// отравление
@@ -259,9 +259,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Infestation", (_mod_rate * _role))
-		sc_logging("Cost state Infestation", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "poison damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Infestation", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "poison damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 6: {	// парализация
@@ -269,30 +269,30 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Paralyze", (_mod_rate * _role))
-		sc_logging("Cost state Paralyze", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Paralyze", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 7: {	// +1 к атаке
-		_val[1] = 2.35
+		_val[1] = 3.35
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Gain damage", (_mod_rate * _role))
-		sc_logging("Cost state Gain damage", string(_val[1]))
-		sc_logging("Value", string(_val[2])+"%", "gain damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Gain damage", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2])+"%", "gain damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 8: {	// слабость
-		_val[1] = 2.35
+		_val[1] = 3.35
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Weak", (_mod_rate * _role))
-		sc_logging("Cost state Weak", string(_val[1]))
-		sc_logging("Value", string(_val[2])+"%", "decrease damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Weak", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2])+"%", "decrease damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 9: {	// +1 к ОД
@@ -301,9 +301,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Gain speed", (_mod_rate * _role))
-		sc_logging("Cost state Gain speed", string(_val[1]))
-		sc_logging("Value", string(_val[2]), "speed up")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Gain speed", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]), "speed up", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 10: {	// замедление
@@ -312,9 +312,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Slowdown", (_mod_rate * _role))
-		sc_logging("Cost state Slowdown", string(_val[1]))
-		sc_logging("Value", string(_val[2]), "slowdown speed")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Slowdown", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]), "slowdown speed", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 11: {	// ловушка
@@ -323,9 +323,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[3] + _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Trap", (_mod_rate * _role))
-		sc_logging("Cost state Trap", string(_val[1]))
-		sc_logging("Value damage", string(_val[2]), "at once")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Trap", string(_val[1]), undefined, undefined)
+		sc_logging("Value damage", string(_val[2]), "at once", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 12: {	// случайный урон
@@ -353,8 +353,8 @@ switch _abil_map[? "state"]{
 				break
 			}
 		}
-		sc_logging("Cost state Random damage = 0")
-		sc_logging("Value damage", string(_val[2]), "at once")
+		sc_logging("Cost state Random damage = 0", undefined, undefined, undefined)
+		sc_logging("Value damage", string(_val[2]), "at once", undefined)
 		break
 	}
 	case 13: {	// усыпление
@@ -362,26 +362,26 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Lulling", (_mod_rate * _role))
-		sc_logging("Cost state Lulling", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Lulling", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 14: {	// ошеломление
 		_val[1] = 4
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Stun", (_mod_rate * _role))
-		sc_logging("Cost state Stun", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Stun", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 15: {	// ужас
 		_val[1] = 3
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Fear", (_mod_rate * _role))
-		sc_logging("Cost state Fear", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Fear", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 16: {	// побег
@@ -389,8 +389,8 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Escape", (_mod_rate * _role))
-		sc_logging("Cost state Escape", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Escape", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 17: {	// безделье
@@ -398,39 +398,39 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Waste time", (_mod_rate * _role))
-		sc_logging("Cost state Waste time", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Waste time", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 18: {	// отвратительный
 		_val[1] = 2
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Disgust", (_mod_rate * _role))
-		sc_logging("Cost state Disgust", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Disgust", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 19: {	// прицел
 		_val[1] = 1.65
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Target", (_mod_rate * _role))
-		sc_logging("Cost state Target", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "gain accuracy")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Target", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "gain accuracy", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 20: {	// неуклюжесть
 		_val[1] = 1.2
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Loser", (_mod_rate * _role))
-		sc_logging("Cost state Loser", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "degrease dodge")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Loser", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "degrease dodge", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 21: {	// отбрасывание
@@ -438,8 +438,8 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"]
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Knock back", (_mod_rate * _role))
-		sc_logging("Cost state Knock back", string(_val[1]))
-		sc_logging("Value distance of knock", string(_val[2]))
+		sc_logging("Cost state Knock back", string(_val[1]), undefined, undefined)
+		sc_logging("Value distance of knock", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 22: {	// взрыв
@@ -448,9 +448,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"]
 		_mod_rate = -((_val[1] + _val[2]) * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Explode", (_mod_rate * _role))
-		sc_logging("Cost state Explode", string(_val[1]))
-		sc_logging("Value damage", string(_val[2]), "at area")
-		sc_logging("Radius of damage area", string(_val[3]))
+		sc_logging("Cost state Explode", string(_val[1]), undefined, undefined)
+		sc_logging("Value damage", string(_val[2]), "at area", undefined)
+		sc_logging("Radius of damage area", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 23: {	// месть
@@ -459,8 +459,8 @@ switch _abil_map[? "state"]{
 		_val[3] = (_val[1] * _val[2]) * _val[0]
 		_cur_rate += _val[3] // не зависит от роли атаки "buff"
 		sc_logging("Rating of", _a_name , "state Revenge" , _val[3])
-		sc_logging("Cost state Revenge", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Revenge", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 				break
 	}
 	case 24: {	// камикадзе
@@ -468,68 +468,68 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"]
 		_mod_rate = -(_val[1] + _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Kamikaze" , (_mod_rate * _role))
-		sc_logging("Cost state Kamikaze", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Kamikaze", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 				break
 	}
 	case 25: {	// гипноз
 		_val[1] = 70
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = -_val[1] * _val[2] * _val[0]
 		sc_logging("Rating of", _a_name , "state Hypnotize", (_mod_rate * _role))
-		sc_logging("Cost state Hypnotyze", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Hypnotyze", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 26: {	// снижение точности
 		_val[1] = 1.4
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = -(_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Confusion", (_mod_rate * _role))
-		sc_logging("Cost state Confusion", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "degrease accuracy")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Confusion", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "degrease accuracy", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 27: {	// телекинез
 		_cur_rate += 250 // не зависит от роли атаки "buff"
 		sc_logging("Rating of", _a_name , "state Telekinetic", 250)
-		sc_logging("Cost state Telekinetic", "250")
+		sc_logging("Cost state Telekinetic", "250", undefined, undefined)
 		break
 	}
 	case 28: {	// телепортация
 		_val[1] = 48
-		_val[2] = 50 /_abil_map[? "state_value"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (50 /_abil_map[? "state_value"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_val[3] = _abil_map[? "state_time"]
 		_val[4] = (_val[1] + _val[2]) * _val[3] * _val[0]
 		_cur_rate += _val[4] // не зависит от роли атаки "buff"
 		sc_logging("Rating of", _a_name , "state Teleport", _val[4])
-		sc_logging("Cost state Teleport", string(_val[1]))
-		sc_logging("Distance moving", string(_val[3]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Teleport", string(_val[1]), undefined, undefined)
+		sc_logging("Distance moving", string(_val[3]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 29: {	// буст ближняя
 		_val[1] = 1.3
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Melee up", (_mod_rate * _role))
-		sc_logging("Cost state Melee up", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "increase melee damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Melee up", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "increase melee damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 30: {	// буст дальняя
 		_val[1] = 1.6
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Range up", (_mod_rate * _role))
-		sc_logging("Cost state Range up", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "incease ranged damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Range up", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "incease ranged damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 31: {	// лечение 1
@@ -538,9 +538,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Heal", (_mod_rate * _role))
-		sc_logging("Cost state Heal", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "restore health")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Heal", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "restore health", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 32: {	// лечение 2
@@ -549,9 +549,9 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Cure", (_mod_rate * _role))
-		sc_logging("Cost state Cure", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "restore health and clear damager states")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Cure", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "restore health and clear damager states", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 33: {	// лечение 3
@@ -560,28 +560,28 @@ switch _abil_map[? "state"]{
 		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Medicine", (_mod_rate * _role))
-		sc_logging("Cost state Medicine", string(_val[1]))
-		sc_logging("Value per sec", string(_val[2]), "restore health clear damager and negative states")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Medicine", string(_val[1]), undefined, undefined)
+		sc_logging("Value per sec", string(_val[2]), "restore health clear damager and negative states", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 34: {	// снятие эффектов
 		_val[1] = 60
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_val[3] = (_val[1] * _val[2]) * _val[0]
 		_cur_rate += _val[3] // не зависит от роли атаки "buff"
 		sc_logging("Rating of", _a_name , "state Clear", _val[3])
-		sc_logging("Cost state Clear", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Clear", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 35: {	// уверенность
 		_val[1] = 45
-		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = (_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Confidance", (_mod_rate * _role))
-		sc_logging("Cost state Confidance", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Confidance", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 36: {	// отражение
@@ -589,30 +589,30 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = (_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Reflect", (_mod_rate * _role))
-		sc_logging("Cost state Reflect", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Reflect", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 37: {	// поглощение
 		_val[1] = 2.6
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Block", (_mod_rate * _role))
-		sc_logging("Cost state Blok", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "reduce damage")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Blok", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "reduce damage", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 38: {	// ловкость
 		_val[1] = 4
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Dextery", (_mod_rate * _role))
-		sc_logging("Cost state Dextery", string(_val[1]))
-		sc_logging("Value", string(_val[2]) + "%", "increace dodge")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Dextery", string(_val[1]), undefined, undefined)
+		sc_logging("Value", string(_val[2]) + "%", "increace dodge", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 	case 39: {	// обоюдный урон
@@ -620,7 +620,7 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_value"]
 		_mod_rate = (_val[1] * _val[2]) * (1 - _val[0])
 		sc_logging("Rating of", _a_name , "state Desperate",(_mod_rate * _role))
-		sc_logging("Cost state Desperate", string(_val[1]))
+		sc_logging("Cost state Desperate", string(_val[1]), undefined, undefined)
 		sc_logging("Percent of return damage", string(_val[2]),"and chanse not to take damage", string((1-_val[0])*100) + "%")
 		break
 	}
@@ -629,19 +629,19 @@ switch _abil_map[? "state"]{
 		_val[2] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
 		_mod_rate = -(_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Wreak", (_mod_rate * _role))
-		sc_logging("Cost state Wreak", string(_val[1]))
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]))
+		sc_logging("Cost state Wreak", string(_val[1]), undefined, undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[2]), undefined, undefined)
 		break
 	}
 	case 41: {	// силовой щит
-		_val[1] = 0.07
+		_val[1] = 0.1
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Barrier", (_mod_rate * _role))
-		sc_logging("Cost state Barrier", string(_val[1]))
-		sc_logging("Durability", string(_val[2]), "of segment")
-		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]))
+		sc_logging("Cost state Barrier", string(_val[1]), undefined, undefined)
+		sc_logging("Durability", string(_val[2]), "of segment", undefined)
+		sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
 		break
 	}
 }

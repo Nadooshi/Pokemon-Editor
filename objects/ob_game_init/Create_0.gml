@@ -397,6 +397,9 @@ aura_table = array_create(_ELEMENTAL.count-1)
 for (var i=0; i<array_length_1d(aura_table); i++)
 	aura_table[i] = array_create(3, _ELEMENTAL.none)
 
+globalvar evolution_tree;
+evolution_tree = ds_map_create()
+
 globalvar popup_appeared; popup_appeared = false
 
 sc_init_globals()
