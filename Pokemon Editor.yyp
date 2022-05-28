@@ -282,6 +282,7 @@
     {"id":{"name":"sp_pr_attack_43","path":"sprites/sp_pr_attack_43/sp_pr_attack_43.yy",},"order":40,},
     {"id":{"name":"ob_slider","path":"objects/ob_slider/ob_slider.yy",},"order":5,},
     {"id":{"name":"sp_pr_attack_25","path":"sprites/sp_pr_attack_25/sp_pr_attack_25.yy",},"order":45,},
+    {"id":{"name":"ob_button_save_evtree","path":"objects/ob_button_save_evtree/ob_button_save_evtree.yy",},"order":6,},
     {"id":{"name":"ob_dual_slider","path":"objects/ob_dual_slider/ob_dual_slider.yy",},"order":6,},
     {"id":{"name":"ob_pokeshow_attack","path":"objects/ob_pokeshow_attack/ob_pokeshow_attack.yy",},"order":7,},
     {"id":{"name":"ob_element_attack","path":"objects/ob_element_attack/ob_element_attack.yy",},"order":0,},

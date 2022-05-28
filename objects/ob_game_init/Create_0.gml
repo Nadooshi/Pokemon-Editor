@@ -413,6 +413,7 @@ if path = "" {
 
 bini_load(path)
 
+// TODO: check if these sections exists
 ds_map_read(action_list, bini_sections[? "actions"][? "action_list"])
 action_list_count = ds_map_size(action_list)
 ds_map_read(ability_list, bini_sections[? "abilities"][? "ability_list"])
@@ -433,11 +434,24 @@ for (var i=0; i<array_length_1d(aura_table); i++) {
 	aura_table[i] = _arr
 }
 
+//load evolution_tree
+
+if ds_map_exists(bini_sections, "evolution_tree") {
+	var _name = ds_map_find_first(bini_sections[? "evolution_tree"])
+	var _s = ""
+	while not is_undefined(_name) {
+		_s = bini_sections[? "evolution_tree"][? _name]
+		_s = string_replace_all(_s, "'", "\"")
+		show_message(_s)
+		evolution_tree[? _name] = json_parse(_s)
+		_name = ds_map_find_next(bini_sections[? "evolution_tree"], _name)
+	}
+}
 
 globalvar logging;
 logging = ds_list_create()
 
 
-
 // Get max levels from predecessors
 sc_get_p_stage()
+
