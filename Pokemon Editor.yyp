@@ -214,7 +214,7 @@
     {"id":{"name":"sc_get_p_stage","path":"scripts/sc_get_p_stage/sc_get_p_stage.yy",},"order":10,},
     {"id":{"name":"sc_rate_action","path":"scripts/sc_rate_action/sc_rate_action.yy",},"order":11,},
     {"id":{"name":"ob_button_afix_restore","path":"objects/ob_button_afix_restore/ob_button_afix_restore.yy",},"order":3,},
-    {"id":{"name":"sc_rate_pokemon","path":"scripts/sc_rate_pokemon/sc_rate_pokemon.yy",},"order":12,},
+    {"id":{"name":"sc_rate_pokemon_and_ability","path":"scripts/sc_rate_pokemon_and_ability/sc_rate_pokemon_and_ability.yy",},"order":12,},
     {"id":{"name":"fn_card","path":"fonts/fn_card/fn_card.yy",},"order":0,},
     {"id":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"order":2,},
     {"id":{"name":"ob_picture","path":"objects/ob_picture/ob_picture.yy",},"order":0,},
@@ -513,7 +513,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"nsfs-doc.html","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.5.0.8",
   },
   "resourceVersion": "1.5",
   "name": "Pokemon Editor",

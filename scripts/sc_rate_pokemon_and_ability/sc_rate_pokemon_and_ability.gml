@@ -473,7 +473,7 @@ switch _abil_map[? "state"]{
 				break
 	}
 	case 25: {	// гипноз
-		_val[1] = 70
+		_val[1] = 30
 		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = -_val[1] * _val[2] * _val[0]
 		sc_logging("Rating of", _a_name , "state Hypnotize", (_mod_rate * _role))
@@ -566,7 +566,7 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 34: {	// снятие эффектов
-		_val[1] = 60
+		_val[1] = 40
 		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_val[3] = (_val[1] * _val[2]) * _val[0]
 		_cur_rate += _val[3] // не зависит от роли атаки "buff"
@@ -576,7 +576,7 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 35: {	// уверенность
-		_val[1] = 45
+		_val[1] = 25
 		_val[2] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = (_val[1] * _val[2]) * _val[0]
 		sc_logging("Rating of", _a_name , "state Confidance", (_mod_rate * _role))
@@ -594,9 +594,9 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 37: {	// поглощение
-		_val[1] = 2.6
+		_val[1] = 3.6
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 2
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Block", (_mod_rate * _role))
 		sc_logging("Cost state Blok", string(_val[1]), undefined, undefined)
@@ -605,9 +605,9 @@ switch _abil_map[? "state"]{
 		break
 	}
 	case 38: {	// ловкость
-		_val[1] = 4
+		_val[1] = 4.3
 		_val[2] = _abil_map[? "state_value"]
-		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 5
+		_val[3] = (_abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * 0.25)) / 3
 		_mod_rate = (_val[1] * _val[2] * _val[3]) * _val[0] * 0.1
 		sc_logging("Rating of", _a_name , "state Dextery", (_mod_rate * _role))
 		sc_logging("Cost state Dextery", string(_val[1]), undefined, undefined)
