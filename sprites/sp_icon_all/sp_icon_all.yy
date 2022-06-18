@@ -560,7 +560,7 @@
     "spriteId": {"name":"sp_icon_all","path":"sprites/sp_icon_all/sp_icon_all.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

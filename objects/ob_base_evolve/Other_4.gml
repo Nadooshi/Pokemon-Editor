@@ -10,7 +10,6 @@ function add_node(_name, _parent = "", _base = "") {
 	}
 }
 
-current_pokemon = ds_stack_pop(map_stack)
 // if new evolution selected via "evolution" parameter in current pokemon -> add node in evolution_tree
 var _child_name = current_pokemon[? "evolution"]
 var _cur_name = current_pokemon[? "title"]
@@ -37,6 +36,7 @@ if not is_undefined(_child_name) and _child_name != "" {
 var _elem = ds_map_create()
 _slot = []
 var _count = 1
+
 #region create slot
 
 _elem[? "x"] = 0
@@ -58,11 +58,12 @@ if place_meeting(x, y, fr_evol_node) {
 	_elem[? "ob"] = object_index
 //	_elem[? "param"] = parameter_name
 	
-	_slot[_count] = ds_map_create()
-	ds_map_copy(_slot[_count], _elem)
+	other._slot[_count] = ds_map_create()
+	ds_map_copy(other._slot[_count], _elem)
 	_count++
 }
 #endregion
+
 ds_map_destroy(_elem)
 
 xstep = 0
@@ -74,16 +75,17 @@ function enum_children(_name) {
 	var _node = evolution_tree[? _name]
 	xstep++
 	_ystep = 0
+	var _frame = sc_create_slot_composed(xstep*128, _ystep*96 + 96, _name, _slot, ob_frame)
+	_frame.visible = false
 	for (var i=0; i<array_length(_node.children); i++) {
 		_ystep++
 		enum_children(_node.children[i])
 	}
-	var _frame = sc_create_slot_composed(xstep*128, _ystep*96, _name, _slot, ob_frame)
-//	_frame.visible = false
 	
 	if _ystep > ystep
 		ystep = _ystep
 }
+
 
 enum_children(evolution_tree[? _cur_name].base)
 
