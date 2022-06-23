@@ -67,31 +67,25 @@ if place_meeting(x, y, fr_evol_node) {
 ds_map_destroy(_elem)
 
 xstep = 0
-ystep = 0
 
-function enum_children(_name) {
-	var _ystep
-	
+function enum_children(_name, _ystep) {
 	var _node = evolution_tree[? _name]
-	xstep++
-	_ystep = 0
-	var _frame = sc_create_slot_composed(xstep*128, _ystep*96 + 96, _name, _slot, ob_frame)
+	var _frame = sc_create_slot_composed(xstep * 128 + 96, _ystep * 96 + 96, _name, _slot, ob_frame)
 	_frame.visible = false
+	_ystep++
 	for (var i=0; i<array_length(_node.children); i++) {
-		_ystep++
-		enum_children(_node.children[i])
+		xstep+= (i>0)
+		enum_children(_node.children[i], _ystep)
 	}
 	
-	if _ystep > ystep
-		ystep = _ystep
 }
 
 
-enum_children(evolution_tree[? _cur_name].base)
-
-
-
-
+enum_children(evolution_tree[? _cur_name].base, 0, 0)
+// remove ob_delete_evolve for base 
+with instance_find(ob_delete_evolve, 1)
+	instance_destroy()
+	
 
 sc_refresh_ui()
 

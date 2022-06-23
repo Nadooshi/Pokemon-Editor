@@ -435,15 +435,20 @@ for (var i=0; i<array_length_1d(aura_table); i++) {
 }
 
 //load evolution_tree
-
 if ds_map_exists(bini_sections, "evolution_tree") {
 	var _name = ds_map_find_first(bini_sections[? "evolution_tree"])
 	var _s = ""
 	while not is_undefined(_name) {
 		_s = bini_sections[? "evolution_tree"][? _name]
 		_s = string_replace_all(_s, "'", "\"")
-		show_message(_s)
-		evolution_tree[? _name] = json_parse(_s)
+		
+		try {
+			evolution_tree[? _name] = json_parse(_s)
+		}
+		catch (_e){
+			show_message(_name + " has invalid evolution tree in pokedex:\n\n" + _s)
+			evolution_tree[? _name] = undefined
+		}
 		_name = ds_map_find_next(bini_sections[? "evolution_tree"], _name)
 	}
 }
