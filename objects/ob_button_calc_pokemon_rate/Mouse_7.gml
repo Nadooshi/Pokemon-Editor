@@ -38,4 +38,4 @@ bini_load(path)
 
 
 ds_map_destroy(_pokemon)
-
+room_restart()

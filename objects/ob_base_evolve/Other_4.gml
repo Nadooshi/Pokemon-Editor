@@ -1,20 +1,26 @@
 /// @desc init
 
-function add_node(_name, _parent = "", _base = "") {
-	if not is_struct(evolution_tree[? _name]) {
-		evolution_tree[? _name] = {
-			children: [],
-			parent: _parent,
-			base: _base
+function add_node(_name, _maxlvl = 0, _parent = "", _base = "") {
+		if not is_struct(evolution_tree[? _name]) {
+			evolution_tree[? _name] = {
+				maxlvl: _maxlvl,
+				children: [],
+				parent: _parent,
+				base: _base
+			}
+		} else {
+			evolution_tree[? _name].base = _base
+			evolution_tree[? _name].parent = _parent
+			evolution_tree[? _name].maxlvl = _maxlvl
 		}
-	}
 }
 
 // if new evolution selected via "evolution" parameter in current pokemon -> add node in evolution_tree
 var _child_name = current_pokemon[? "evolution"]
 var _cur_name = current_pokemon[? "title"]
 
-add_node(_cur_name)
+if not is_struct(evolution_tree[? _cur_name])
+	add_node(_cur_name, current_pokemon[? "maxlevel"])
 
 // set base
 var _parent_name = evolution_tree[? _cur_name].parent
@@ -26,9 +32,15 @@ if not is_undefined(_parent_name) and _parent_name != "" {
 
 if not is_undefined(_child_name) and _child_name != "" {
 	if sc_find_in_array(evolution_tree[? _cur_name].children, _child_name) = -1 {
+		var _temp = ds_map_create()
+		
+		sc_load_pokemon(_child_name,_temp)
+		var t_maxlvl = _temp[? "maxlevel"]
 		array_push(evolution_tree[? _cur_name].children, _child_name)
-		add_node(_child_name, _cur_name, evolution_tree[? _cur_name].base)
+		add_node(_child_name, t_maxlvl, _cur_name, evolution_tree[? _cur_name].base)
 		current_pokemon[? "evolution"] = ""
+		
+		ds_map_destroy(_temp)
 	}
 }
 
@@ -81,7 +93,7 @@ function enum_children(_name, _ystep) {
 }
 
 
-enum_children(evolution_tree[? _cur_name].base, 0, 0)
+enum_children(evolution_tree[? _cur_name].base, 0)
 // remove ob_delete_evolve for base 
 with instance_find(ob_delete_evolve, 1)
 	instance_destroy()

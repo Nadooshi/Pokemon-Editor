@@ -23,17 +23,17 @@ function sc_hint_formula(argument0, argument1, argument2, argument3) {
 			if not is_undefined(p_stage[? _name]) 
 				pr_lvl = (p_stage[? _name]) + 1
 			result = sc_calculate_formula(mode,force,pr_lvl,pow)
-			compl_hint = "Recomended value\nFor this stage: "+string(round(result))
+			compl_hint = "Recomended health value\nFor this stage: "+string(round(result))
 			break;
 		}
 		case 2: { // calculate health
 			result = sc_calculate_formula(mode,force,lvl,pow)
-			compl_hint = "Recomended value\nFor next stage: "+string(round(result))
+			compl_hint = "Recomended health value\nFor next stage: "+string(round(result))
 			break;
 		}
 		case 3: { // calculate damage
 			result = sc_calculate_formula(mode,force,lvl,pow)
-			compl_hint = "Recomended value\n " + string(round(result*0.9)) + "~" + string(round(result))
+			compl_hint = "Recomended damage value\n " + string(round(result*0.9)) + "~" + string(round(result))
 			break;
 		}
 	}
