@@ -14,5 +14,4 @@ if variant_count > 0 {
 	ds_map_set(dedicated_map, parameter_name, value)
 }
 
-//with ob_switch_button
-	event_perform( ev_other, ev_user0)
+event_perform( ev_other, ev_user0)

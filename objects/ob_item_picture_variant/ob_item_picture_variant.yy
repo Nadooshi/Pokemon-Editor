@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "sp_items",
+    "path": "sprites/sp_items/sp_items.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "ob_picture",
+    "path": "objects/ob_picture/ob_picture.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"parameter_name","path":"objects/ob_ui_object/ob_ui_object.yy",},"objectId":{"name":"ob_ui_object","path":"objects/ob_ui_object/ob_ui_object.yy",},"value":"picture","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Items Editor",
+    "path": "folders/Objects/Items Editor.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "ob_item_picture_variant",
+  "tags": [],
+  "resourceType": "GMObject",
+}

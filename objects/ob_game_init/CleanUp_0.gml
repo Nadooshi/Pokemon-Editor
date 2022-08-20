@@ -6,6 +6,8 @@ if ds_exists(current_pokemon, ds_type_map)
 	ds_map_destroy(current_pokemon)
 if ds_exists(current_ability, ds_type_map)
 	ds_map_destroy(current_ability)
+if ds_exists(current_item, ds_type_map)
+	ds_map_destroy(current_item)
 
 for (var i=0; i<array_length_1d(ability_slot); i++)
 	ds_map_destroy(ability_slot[i])

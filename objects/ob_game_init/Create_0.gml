@@ -342,6 +342,48 @@ force_text[_FORCE.legendary] = "Legendary"
 force_text[_FORCE.incredible]= "Incredible"
 //////////////////////////////////
 
+enum _ITEM_TYPE {
+	berry,
+	potion,
+	stone,
+	artifact
+}
+enum _EFFECT_BERRY_TYPE {
+	life_increase,
+	life_regen,
+	hurt_regen,
+	defence,
+	power_increase,
+	power_regen,
+	dextery,
+	target,
+	attackUp,
+	meleeUp,
+	rangeUp
+}
+enum _EFFECT_POITION_TYPE {
+	heal,
+	clean,
+	awake,
+	paralyze_remove,
+	stun_remove,
+	trap_remove,
+	power_full // разово восстанавливает ОД на 100%
+}
+//камни усиливают покемона излучаемым элементом.
+enum _EFFECT_ARTIFACT_TYPE {
+	defence_curl,
+	mutual_damage, //контактные атаки противника наносят ему урон
+	slowdown_aura,
+	speedup_aura,
+	damage_aura,
+	fear_aura,
+	// для сложных атрифактов
+	damage_region,
+	control_region,
+	stun_region
+}
+
 globalvar pic_rate var;
 pic_rate[0] = sp_rating_0
 pic_rate[1] = sp_rating_1
@@ -369,6 +411,8 @@ globalvar current_ability;
 current_ability = ds_map_create()
 globalvar current_pokemon;
 current_pokemon = ds_map_create()
+globalvar current_item;
+current_item = ds_map_create()
 
 globalvar p_stage;
 p_stage = ds_map_create()

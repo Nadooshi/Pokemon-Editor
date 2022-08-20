@@ -23,7 +23,7 @@ function sc_clear_pokemon(argument0) {
 		_ds[? "position_stage"] = 1 // start position
 		_ds[? "maxlevel"] = 100
 		_ds[? "force"] = 0		// image_index from sp_icon_force
-		_ds[? "stage"] = 1      // 0 - alone, 1,2,3 - stages of evolution, 4 - MEGA stage
+		_ds[? "stage"] = 1      // catch level 0 - rare 1,2,3 - standart catch, 4 - no catch //если по логике, то придётся переделывать весь покедекс
 		_ds[? "rating"] = 0
 		_ds[? "habitat"] = _HABITAT._all
 	}

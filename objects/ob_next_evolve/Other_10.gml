@@ -5,7 +5,6 @@ if is_undefined(parent)
 if not instance_exists(parent)
 	exit
 
-sc_load_pokemon(parent.name, pokemon)
-
-image_index = pokemon[? "face"]
+if sc_load_pokemon(parent.name, pokemon) // if success set index to image
+	image_index = pokemon[? "face"]
 
