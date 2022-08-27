@@ -1,5 +1,7 @@
 /// @desc
 
+if not clickable exit
+
 if editing 
 if mouse_x > view_xport[1] {
 	view_visible[2] = false

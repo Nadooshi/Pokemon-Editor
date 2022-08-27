@@ -404,6 +404,8 @@ globalvar pokemon_list;  // pokemon names
 pokemon_list = ds_map_create()
 globalvar pokemon_list_count;
 pokemon_list_count = 0
+globalvar item_list;
+item_list = ds_map_create()
 
 globalvar current_action;
 current_action = ds_map_create()
@@ -412,7 +414,7 @@ current_ability = ds_map_create()
 globalvar current_pokemon;
 current_pokemon = ds_map_create()
 globalvar current_item;
-current_item = ds_map_create()
+current_item = sc_new_item()
 
 globalvar p_stage;
 p_stage = ds_map_create()
@@ -464,6 +466,9 @@ ds_map_read(ability_list, bini_sections[? "abilities"][? "ability_list"])
 ability_count = ds_map_size(ability_list)	
 ds_map_read(pokemon_list, bini_sections[? "pokemons"][? "pokemon_list"])
 pokemon_list_count = ds_map_size(pokemon_list)
+if ds_map_exists(bini_sections, "inventory")
+	ds_map_read(item_list, bini_sections[? "inventory"][? "item_list"])
+
 
 var _arr = 0
 if ds_map_exists(bini_sections, "element_table")

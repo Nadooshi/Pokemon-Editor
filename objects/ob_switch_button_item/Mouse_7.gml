@@ -12,6 +12,8 @@ if variant_count > 0 {
 	caption = variant_text[variant_index]
 
 	ds_map_set(current_item, parameter_name, value)
+	with dependent_object
+		event_perform(ev_other, ev_user0)
 }
 
 event_perform( ev_other, ev_user0)

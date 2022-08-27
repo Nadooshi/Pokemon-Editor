@@ -1,5 +1,8 @@
 /// @desc
 
+if not visible exit
+if not clickable exit
+
 // Inherit the parent event
 event_inherited();
 

@@ -8,7 +8,5 @@ if variant_count > 0 {
 	if variant_index >= 0
 		caption = variant_text[variant_index]
 		
-	if instance_exists(dependent_object)
-	with dependent_object
-		event_perform(ev_other, ev_user0)
+//	if instance_exists(dependent_object)
 }

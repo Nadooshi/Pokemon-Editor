@@ -1,16 +1,13 @@
 {
-  "spriteId": {
-    "name": "sp_beatyFrame3",
-    "path": "sprites/sp_beatyFrame3/sp_beatyFrame3.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "ob_frame",
-    "path": "objects/ob_frame/ob_frame.yy",
+    "name": "ob_text",
+    "path": "objects/ob_text/ob_text.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,7 +23,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -35,7 +31,7 @@
     "path": "folders/Objects/Items Editor.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_frame_item",
+  "name": "ob_text_item",
   "tags": [],
   "resourceType": "GMObject",
 }

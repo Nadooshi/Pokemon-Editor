@@ -3,8 +3,11 @@
 
 var _type = ds_map_find_value(current_item, "item type")
 
+frameParam.visible = true
+
 with ob_switch_button_item
 if index > 0 {
+	current_item[? "effect type"] = 0
 	event_perform( ev_other, ev_user0)
 	visible = false
 }
@@ -27,9 +30,10 @@ switch _type {
 			visible = false
 	break;
 	case _ITEM_TYPE.stone :
-		with ob_switch_button_item
-			if index > 0
-				visible = false
+		frameParam.visible = false
+		//with ob_switch_button_item
+		//	if index > 0
+		//		visible = false
 		with ob_icon_element_item
 			visible = true
 	break;
@@ -42,5 +46,8 @@ switch _type {
 			visible = true
 	break;
 }
+
+with frameParam
+	event_perform(ev_other, ev_user0)
 
 
