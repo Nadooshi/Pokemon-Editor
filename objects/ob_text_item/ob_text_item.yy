@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sp_beautyLabel2",
+    "path": "sprites/sp_beautyLabel2/sp_beautyLabel2.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

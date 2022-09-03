@@ -346,8 +346,15 @@ enum _ITEM_TYPE {
 	berry,
 	potion,
 	stone,
-	artifact
+	artifact,
+	count
 }
+globalvar item_type_text;
+item_type_text[_ITEM_TYPE.berry] = "Berry"
+item_type_text[_ITEM_TYPE.potion] = "Potion"
+item_type_text[_ITEM_TYPE.stone] = "Stone"
+item_type_text[_ITEM_TYPE.artifact] = "Artifact"
+
 enum _EFFECT_BERRY_TYPE {
 	life_increase,
 	life_regen,
@@ -359,8 +366,22 @@ enum _EFFECT_BERRY_TYPE {
 	target,
 	attackUp,
 	meleeUp,
-	rangeUp
+	rangeUp,
+	count
 }
+globalvar effect_berry_text;
+effect_berry_text[_EFFECT_BERRY_TYPE.life_increase] = "Life increase"
+effect_berry_text[_EFFECT_BERRY_TYPE.life_regen] = "Life regen"
+effect_berry_text[_EFFECT_BERRY_TYPE.hurt_regen] = "Hurt regen"
+effect_berry_text[_EFFECT_BERRY_TYPE.defence] = "Defence"
+effect_berry_text[_EFFECT_BERRY_TYPE.dextery] = "Dexterity"
+effect_berry_text[_EFFECT_BERRY_TYPE.target] = "Target"
+effect_berry_text[_EFFECT_BERRY_TYPE.attackUp] = "Attack +1"
+effect_berry_text[_EFFECT_BERRY_TYPE.meleeUp] = "Melee Up"
+effect_berry_text[_EFFECT_BERRY_TYPE.rangeUp] = "Range Up"
+effect_berry_text[_EFFECT_BERRY_TYPE.power_increase] = "AP increase"
+effect_berry_text[_EFFECT_BERRY_TYPE.power_regen] = "AP regen"
+
 enum _EFFECT_POITION_TYPE {
 	heal,
 	clean,
@@ -368,8 +389,18 @@ enum _EFFECT_POITION_TYPE {
 	paralyze_remove,
 	stun_remove,
 	trap_remove,
-	power_full // разово восстанавливает ОД на 100%
+	power_full, // разово восстанавливает ОД на 100%
+	count
 }
+globalvar effect_potion_text;
+effect_potion_text[_EFFECT_POITION_TYPE.awake] = "Potion Awaking"
+effect_potion_text[_EFFECT_POITION_TYPE.clean] = "Potion Clearness"
+effect_potion_text[_EFFECT_POITION_TYPE.heal] = "Potion Heal"
+effect_potion_text[_EFFECT_POITION_TYPE.paralyze_remove] = "Potion Paralyze"
+effect_potion_text[_EFFECT_POITION_TYPE.stun_remove] = "Potion Stun"
+effect_potion_text[_EFFECT_POITION_TYPE.trap_remove] = "Potion Trap"
+effect_potion_text[_EFFECT_POITION_TYPE.power_full] = "Potion Power"
+
 //камни усиливают покемона излучаемым элементом.
 enum _EFFECT_ARTIFACT_TYPE {
 	defence_curl,
@@ -381,8 +412,19 @@ enum _EFFECT_ARTIFACT_TYPE {
 	// для сложных атрифактов
 	damage_region,
 	control_region,
-	stun_region
+	stun_region,
+	count
 }
+globalvar effect_artifact_text;
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.control_region] = "MindControl region"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.stun_region] = "Stun region"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.damage_region] = "Damage region"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.damage_aura] = "Damage aura"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.speedup_aura] = "Speedup aura"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.slowdown_aura] = "Slowdown aura"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.fear_aura] = "Fear aura"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.defence_curl] = "Defence curl"
+effect_artifact_text[_EFFECT_ARTIFACT_TYPE.mutual_damage] = "Mutual damage"
 
 globalvar pic_rate var;
 pic_rate[0] = sp_rating_0

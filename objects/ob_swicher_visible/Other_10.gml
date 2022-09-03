@@ -18,7 +18,7 @@ switch _type {
 			if index = 1 {
 				visible = true
 			}
-		with ob_icon_element_item
+		with iconElementItem
 			visible = false
 	break;
 	case _ITEM_TYPE.potion :
@@ -26,7 +26,7 @@ switch _type {
 			if index = 2 {
 				visible = true
 			}
-		with ob_icon_element_item
+		with iconElementItem
 			visible = false
 	break;
 	case _ITEM_TYPE.stone :
@@ -34,7 +34,7 @@ switch _type {
 		//with ob_switch_button_item
 		//	if index > 0
 		//		visible = false
-		with ob_icon_element_item
+		with iconElementItem
 			visible = true
 	break;
 	case _ITEM_TYPE.artifact :
@@ -42,7 +42,7 @@ switch _type {
 			if index = 3 {
 				visible = true
 			}
-		with ob_icon_element_item
+		with iconElementItem
 			visible = true
 	break;
 }

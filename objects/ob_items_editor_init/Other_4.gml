@@ -52,18 +52,18 @@ if place_meeting(x, y, ob_frame_item) {
 	slot_elements_count++
 }
 
+ds_map_destroy(_elem)
 #endregion
-
-// clear item_slot[] from memory!
 
 var _list = sc_map_to_list(item_list)
 sc_create_slot_list( _list, item_slot, 1360, 16, 16)
 ds_list_destroy(_list)
-
 height_items = room_height
 
 sc_group_ui_objects(frameParam)
 
 //room_height = height_pictures
 
-//sc_refresh_ui()
+with ob_frame_item
+if name != ""
+	event_perform(ev_other, ev_user1)
