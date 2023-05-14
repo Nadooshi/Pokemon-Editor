@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sp_biomes",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 128,
   "height": 128,
   "textureGroupId": {
@@ -24,102 +28,42 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"211dbf9f-150e-4ab8-8b1c-c673fa8bea7a","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"211dbf9f-150e-4ab8-8b1c-c673fa8bea7a","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"211dbf9f-150e-4ab8-8b1c-c673fa8bea7a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"89fecbbe-4cda-4195-a661-edd05868caca","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"89fecbbe-4cda-4195-a661-edd05868caca","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"89fecbbe-4cda-4195-a661-edd05868caca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ff25e898-202b-4cd1-86d5-033781d539bc","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff25e898-202b-4cd1-86d5-033781d539bc","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"ff25e898-202b-4cd1-86d5-033781d539bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"81896df6-2263-4204-883c-5abfe3940038","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81896df6-2263-4204-883c-5abfe3940038","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"81896df6-2263-4204-883c-5abfe3940038","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cfc218b7-d274-4c6c-b129-3377cc4122b9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cfc218b7-d274-4c6c-b129-3377cc4122b9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"cfc218b7-d274-4c6c-b129-3377cc4122b9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6e3ac5eb-04a2-4a6d-abd8-f03cdbd67ba4","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e3ac5eb-04a2-4a6d-abd8-f03cdbd67ba4","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"6e3ac5eb-04a2-4a6d-abd8-f03cdbd67ba4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"343d5cfa-5698-48fc-b9ac-fd180df0ea8d","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"343d5cfa-5698-48fc-b9ac-fd180df0ea8d","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"343d5cfa-5698-48fc-b9ac-fd180df0ea8d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"930aa40a-1a8f-4d02-9e32-427afd3d62f9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"930aa40a-1a8f-4d02-9e32-427afd3d62f9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"930aa40a-1a8f-4d02-9e32-427afd3d62f9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"672fe315-e38b-416c-a26c-1dfb5d5aeea4","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"672fe315-e38b-416c-a26c-1dfb5d5aeea4","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"672fe315-e38b-416c-a26c-1dfb5d5aeea4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f3b7f0a6-6aa2-4427-8554-68741e5c2cd8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f3b7f0a6-6aa2-4427-8554-68741e5c2cd8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"f3b7f0a6-6aa2-4427-8554-68741e5c2cd8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"53f3479e-8cc2-42a1-9e6e-fc5c070ed8d0","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53f3479e-8cc2-42a1-9e6e-fc5c070ed8d0","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"53f3479e-8cc2-42a1-9e6e-fc5c070ed8d0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d42e480f-d56b-4101-b706-cf3f9ad48e68","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d42e480f-d56b-4101-b706-cf3f9ad48e68","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"d42e480f-d56b-4101-b706-cf3f9ad48e68","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bb6a78c6-283e-41c5-9fe7-fb2ba85ec9a9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bb6a78c6-283e-41c5-9fe7-fb2ba85ec9a9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"bb6a78c6-283e-41c5-9fe7-fb2ba85ec9a9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"16fa1ca6-b495-4bcd-9a99-5aedf63d92f9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"16fa1ca6-b495-4bcd-9a99-5aedf63d92f9","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"16fa1ca6-b495-4bcd-9a99-5aedf63d92f9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f6d3ce6-0b00-463e-a6db-e6f9d0d46aa8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f6d3ce6-0b00-463e-a6db-e6f9d0d46aa8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"8f6d3ce6-0b00-463e-a6db-e6f9d0d46aa8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1bd15603-535e-4541-8892-53057304b920","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1bd15603-535e-4541-8892-53057304b920","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"1bd15603-535e-4541-8892-53057304b920","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0b4151fc-444b-414a-b335-1c12a4942c13","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0b4151fc-444b-414a-b335-1c12a4942c13","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"0b4151fc-444b-414a-b335-1c12a4942c13","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1745746a-99ef-4206-b369-3ca40bb66685","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1745746a-99ef-4206-b369-3ca40bb66685","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"1745746a-99ef-4206-b369-3ca40bb66685","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a6569da6-2cc8-49ca-8a76-a7d0e20d9dc8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a6569da6-2cc8-49ca-8a76-a7d0e20d9dc8","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"a6569da6-2cc8-49ca-8a76-a7d0e20d9dc8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e1368389-90e5-4ad4-90af-a79f4e70189b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1368389-90e5-4ad4-90af-a79f4e70189b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"e1368389-90e5-4ad4-90af-a79f4e70189b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2cbe4547-65d5-482f-9089-2cc8f8ee178a","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2cbe4547-65d5-482f-9089-2cc8f8ee178a","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"2cbe4547-65d5-482f-9089-2cc8f8ee178a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f2d673c-7359-4364-98bc-37caa605473d","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f2d673c-7359-4364-98bc-37caa605473d","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"6f2d673c-7359-4364-98bc-37caa605473d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f3f60407-66b3-4334-ad08-2e1fb4c66a00","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f3f60407-66b3-4334-ad08-2e1fb4c66a00","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"f3f60407-66b3-4334-ad08-2e1fb4c66a00","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c6558eb5-2fee-4740-a6aa-5fb2dd1c77a6","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c6558eb5-2fee-4740-a6aa-5fb2dd1c77a6","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"c6558eb5-2fee-4740-a6aa-5fb2dd1c77a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"93fccf14-40b6-4395-9d87-3c90cb80e03e","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"93fccf14-40b6-4395-9d87-3c90cb80e03e","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"93fccf14-40b6-4395-9d87-3c90cb80e03e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"34c696e9-84a1-4708-8cb9-858afe11137e","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"34c696e9-84a1-4708-8cb9-858afe11137e","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"34c696e9-84a1-4708-8cb9-858afe11137e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1463d36f-0a24-4839-960e-f2e351d3759b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1463d36f-0a24-4839-960e-f2e351d3759b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"1463d36f-0a24-4839-960e-f2e351d3759b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1ec9c1c1-7b8e-4f19-a5da-17d833b3f656","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ec9c1c1-7b8e-4f19-a5da-17d833b3f656","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"1ec9c1c1-7b8e-4f19-a5da-17d833b3f656","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"49858d99-bc92-439e-bb3a-caa8ed543815","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"49858d99-bc92-439e-bb3a-caa8ed543815","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"49858d99-bc92-439e-bb3a-caa8ed543815","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"116a34c0-e253-4801-bca8-82430fe28d5b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"116a34c0-e253-4801-bca8-82430fe28d5b","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"116a34c0-e253-4801-bca8-82430fe28d5b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cde4f2fd-ec55-4f4e-87ba-7203047b31b5","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cde4f2fd-ec55-4f4e-87ba-7203047b31b5","path":"sprites/sp_biomes/sp_biomes.yy",},"LayerId":{"name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","name":"cde4f2fd-ec55-4f4e-87ba-7203047b31b5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"211dbf9f-150e-4ab8-8b1c-c673fa8bea7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"89fecbbe-4cda-4195-a661-edd05868caca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff25e898-202b-4cd1-86d5-033781d539bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81896df6-2263-4204-883c-5abfe3940038",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfc218b7-d274-4c6c-b129-3377cc4122b9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e3ac5eb-04a2-4a6d-abd8-f03cdbd67ba4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"343d5cfa-5698-48fc-b9ac-fd180df0ea8d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"930aa40a-1a8f-4d02-9e32-427afd3d62f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"672fe315-e38b-416c-a26c-1dfb5d5aeea4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3b7f0a6-6aa2-4427-8554-68741e5c2cd8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"53f3479e-8cc2-42a1-9e6e-fc5c070ed8d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d42e480f-d56b-4101-b706-cf3f9ad48e68",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb6a78c6-283e-41c5-9fe7-fb2ba85ec9a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"16fa1ca6-b495-4bcd-9a99-5aedf63d92f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f6d3ce6-0b00-463e-a6db-e6f9d0d46aa8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1bd15603-535e-4541-8892-53057304b920",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b4151fc-444b-414a-b335-1c12a4942c13",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1745746a-99ef-4206-b369-3ca40bb66685",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a6569da6-2cc8-49ca-8a76-a7d0e20d9dc8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1368389-90e5-4ad4-90af-a79f4e70189b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2cbe4547-65d5-482f-9089-2cc8f8ee178a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f2d673c-7359-4364-98bc-37caa605473d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3f60407-66b3-4334-ad08-2e1fb4c66a00",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6558eb5-2fee-4740-a6aa-5fb2dd1c77a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93fccf14-40b6-4395-9d87-3c90cb80e03e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34c696e9-84a1-4708-8cb9-858afe11137e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1463d36f-0a24-4839-960e-f2e351d3759b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ec9c1c1-7b8e-4f19-a5da-17d833b3f656",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49858d99-bc92-439e-bb3a-caa8ed543815",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"116a34c0-e253-4801-bca8-82430fe28d5b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cde4f2fd-ec55-4f4e-87ba-7203047b31b5",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -130,7 +74,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"42460284-b649-47e3-b680-ded041a915ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"211dbf9f-150e-4ab8-8b1c-c673fa8bea7a","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cef59ec8-026c-4b46-81f5-3f56d3486402","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"89fecbbe-4cda-4195-a661-edd05868caca","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1ae6e85a-1f52-44d4-a6db-e82df4c0e2b8","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff25e898-202b-4cd1-86d5-033781d539bc","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -162,7 +106,7 @@
             {"id":"6dc9d9d2-292b-41bf-a697-9643a553d80e","Key":28.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49858d99-bc92-439e-bb3a-caa8ed543815","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"17735bd3-18c6-4764-8f43-f46583bfb3c8","Key":29.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"116a34c0-e253-4801-bca8-82430fe28d5b","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"19c9fb11-f2fb-4bdf-ae5d-423304224c60","Key":30.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cde4f2fd-ec55-4f4e-87ba-7203047b31b5","path":"sprites/sp_biomes/sp_biomes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -178,22 +122,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_biomes","path":"sprites/sp_biomes/sp_biomes.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2ccdc74a-ba8e-4bd0-82c4-2a819470b507","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sp_biomes",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

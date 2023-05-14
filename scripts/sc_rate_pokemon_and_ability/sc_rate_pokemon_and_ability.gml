@@ -201,13 +201,12 @@ var _mod_rate = 0
 if is_undefined(_dmg) 
 	_dmg = 0
 if _a_name = undefined
-	_a_name = "free state"
+	_a_name = "~free~"
 	
 var _role = -1 // is the Debuff
 if is_buff = _ATTACK_ROLE.buff
 	_role = 1 // is the Buff
 
-#macro cooldown_cost_mod 0.25
 _val[0] = 0.25 * (_abil_map[? "state_rate"] + 1) 
 switch _abil_map[? "state"]{
 	case 0: break;
@@ -330,31 +329,46 @@ switch _abil_map[? "state"]{
 	}
 	case 12: {	// случайный урон
 		_val[1] = _abil_map[? "state_value"]
-		_val[2] = _dmg // * 0.1
+		_val[2] = _dmg // = 10
+		_val[3] = _abil_map[? "state_time"] - (_abil_map[? "state_cooldown"] * cooldown_cost_mod)
 		switch _val[1] {
 			case 0: {
 				_mod_rate = -_val[2] * 0.5 *_val[0]
 				sc_logging("Rating of", _a_name , "state random damage *0.5", (_mod_rate * _role))
+				sc_logging("Cost state Random damage = ", _val[2]* 0.5, undefined, undefined)
 				break
 			}
 			case 1: {
 				_mod_rate = -_val[2] *_val[0]
 				sc_logging("Rating of", _a_name , "state random damage * 1", (_mod_rate * _role))
+				sc_logging("Cost state Random damage = ", _val[2], undefined, undefined)
 				break
 			}
 			case 2: {
 				_mod_rate = -_val[2] * 1.5 *_val[0]
 				sc_logging("Rating of", _a_name , "state random damage * 2", (_mod_rate * _role))
+				sc_logging("Cost state Random damage = ", _val[2]* 1.5, undefined, undefined)
 				break
 			}
 			case 3: {
 				_mod_rate = -_val[2]* 2 *_val[0]
 				sc_logging("Rating of", _a_name , "state random damage * 3", (_mod_rate * _role))
+				sc_logging("Cost state Random damage = ", _val[2]* 2, undefined, undefined)
 				break
 			}
+			default: {
+				_mod_rate = -(_val[2] * (_val[1]-1)) *_val[0]
+				sc_logging("Rating of", _a_name , "state random damage * " + string(_val[1]), (_mod_rate * _role))
+				sc_logging("Cost state Random damage = ", _val[2] * (_val[1] -1), undefined, undefined)
+				break				
+			}
 		}
-		sc_logging("Cost state Random damage = 0", undefined, undefined, undefined)
-		sc_logging("Value damage", string(_val[2]), "at once", undefined)
+		if _val[3] > 0 {
+			_mod_rate *= _val[3]
+			sc_logging("Cost for difference of lifetime/cooldown", string(_val[3]), undefined, undefined)
+		}
+		sc_logging("Value rate", _val[0] * 100, "%", undefined)
+		sc_logging("Value damage", _val[2], "at once", undefined)
 		break
 	}
 	case 13: {	// усыпление

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sp_timeday",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 128,
   "height": 128,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f9e8d4e6-8a19-44d8-bf4e-7612a1790d6c","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f9e8d4e6-8a19-44d8-bf4e-7612a1790d6c","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":{"name":"8cc5657b-a3e1-4272-ad6d-59ecad330652","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"f9e8d4e6-8a19-44d8-bf4e-7612a1790d6c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1c2eb569-e5cf-43ec-bd4c-4788582e7d2a","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c2eb569-e5cf-43ec-bd4c-4788582e7d2a","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":{"name":"8cc5657b-a3e1-4272-ad6d-59ecad330652","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"1c2eb569-e5cf-43ec-bd4c-4788582e7d2a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4d0558c3-c7b0-44a0-91f1-3d4b1032abc2","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4d0558c3-c7b0-44a0-91f1-3d4b1032abc2","path":"sprites/sp_timeday/sp_timeday.yy",},"LayerId":{"name":"8cc5657b-a3e1-4272-ad6d-59ecad330652","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","name":"4d0558c3-c7b0-44a0-91f1-3d4b1032abc2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9e8d4e6-8a19-44d8-bf4e-7612a1790d6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c2eb569-e5cf-43ec-bd4c-4788582e7d2a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4d0558c3-c7b0-44a0-91f1-3d4b1032abc2",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9a8c775a-1005-49bd-bc03-893473bdd550","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f9e8d4e6-8a19-44d8-bf4e-7612a1790d6c","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8bab41ac-43fa-411f-ab7f-c2894c583455","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c2eb569-e5cf-43ec-bd4c-4788582e7d2a","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"06fa82b5-063a-422d-9e15-8df7f2f5cf1f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d0558c3-c7b0-44a0-91f1-3d4b1032abc2","path":"sprites/sp_timeday/sp_timeday.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_timeday","path":"sprites/sp_timeday/sp_timeday.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8cc5657b-a3e1-4272-ad6d-59ecad330652","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8cc5657b-a3e1-4272-ad6d-59ecad330652","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sp_timeday",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

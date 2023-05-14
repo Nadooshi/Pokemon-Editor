@@ -551,3 +551,4 @@ logging = ds_list_create()
 // Get max levels from predecessors
 sc_get_p_stage()
 
+#macro cooldown_cost_mod 0.25

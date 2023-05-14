@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sp_pokeshow_inframe_3",
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -24,57 +28,27 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a655a760-d42e-4fb7-bd35-35f90a564c7f","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a655a760-d42e-4fb7-bd35-35f90a564c7f","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"a655a760-d42e-4fb7-bd35-35f90a564c7f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"09b210f6-7088-4467-8dc4-7b73fc78af6d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"09b210f6-7088-4467-8dc4-7b73fc78af6d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"09b210f6-7088-4467-8dc4-7b73fc78af6d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2783639-e032-4f59-9ded-cc2c1826a525","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2783639-e032-4f59-9ded-cc2c1826a525","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"c2783639-e032-4f59-9ded-cc2c1826a525","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eabab08b-acc4-410a-ba78-3ad39d0fce0d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eabab08b-acc4-410a-ba78-3ad39d0fce0d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"eabab08b-acc4-410a-ba78-3ad39d0fce0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b8ed8079-a15d-4159-b895-065a98e55560","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b8ed8079-a15d-4159-b895-065a98e55560","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"b8ed8079-a15d-4159-b895-065a98e55560","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e8b8c7e4-a030-4b59-9ea7-dd1138c3f3a1","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e8b8c7e4-a030-4b59-9ea7-dd1138c3f3a1","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"e8b8c7e4-a030-4b59-9ea7-dd1138c3f3a1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"50ac0e7b-fcc1-45ae-b88c-c1c5aee6a6e0","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"50ac0e7b-fcc1-45ae-b88c-c1c5aee6a6e0","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"50ac0e7b-fcc1-45ae-b88c-c1c5aee6a6e0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f28bc2d9-a52d-4af2-a9a6-49105321233d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f28bc2d9-a52d-4af2-a9a6-49105321233d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"f28bc2d9-a52d-4af2-a9a6-49105321233d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"219b2280-9c4e-468e-8df5-ad0ca9b0cdd4","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"219b2280-9c4e-468e-8df5-ad0ca9b0cdd4","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"219b2280-9c4e-468e-8df5-ad0ca9b0cdd4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d87c7b70-8e02-444d-98b0-c6ff2249b54a","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d87c7b70-8e02-444d-98b0-c6ff2249b54a","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"d87c7b70-8e02-444d-98b0-c6ff2249b54a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"02da1cbf-cc56-4dea-b592-4044717f4896","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02da1cbf-cc56-4dea-b592-4044717f4896","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"02da1cbf-cc56-4dea-b592-4044717f4896","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fb6cb5b4-8c12-4c59-9466-4c4e28ba28e9","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb6cb5b4-8c12-4c59-9466-4c4e28ba28e9","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"fb6cb5b4-8c12-4c59-9466-4c4e28ba28e9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"535ed65c-a7b6-4f64-b5d9-a79d45360bd4","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"535ed65c-a7b6-4f64-b5d9-a79d45360bd4","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"535ed65c-a7b6-4f64-b5d9-a79d45360bd4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"63f14a35-2d3b-461b-892d-9e7f46566aab","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"63f14a35-2d3b-461b-892d-9e7f46566aab","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"63f14a35-2d3b-461b-892d-9e7f46566aab","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9db27f9b-00d8-4df5-8b0b-f26b5b22a5ef","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9db27f9b-00d8-4df5-8b0b-f26b5b22a5ef","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"9db27f9b-00d8-4df5-8b0b-f26b5b22a5ef","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5b4292b9-e3dd-4a0c-bdf5-b94fd43e4f86","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5b4292b9-e3dd-4a0c-bdf5-b94fd43e4f86","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"LayerId":{"name":"67521423-603e-4fd6-88f3-58a7eb9a0023","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","name":"5b4292b9-e3dd-4a0c-bdf5-b94fd43e4f86","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a655a760-d42e-4fb7-bd35-35f90a564c7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09b210f6-7088-4467-8dc4-7b73fc78af6d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2783639-e032-4f59-9ded-cc2c1826a525",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eabab08b-acc4-410a-ba78-3ad39d0fce0d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b8ed8079-a15d-4159-b895-065a98e55560",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e8b8c7e4-a030-4b59-9ea7-dd1138c3f3a1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50ac0e7b-fcc1-45ae-b88c-c1c5aee6a6e0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f28bc2d9-a52d-4af2-a9a6-49105321233d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"219b2280-9c4e-468e-8df5-ad0ca9b0cdd4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d87c7b70-8e02-444d-98b0-c6ff2249b54a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02da1cbf-cc56-4dea-b592-4044717f4896",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb6cb5b4-8c12-4c59-9466-4c4e28ba28e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"535ed65c-a7b6-4f64-b5d9-a79d45360bd4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63f14a35-2d3b-461b-892d-9e7f46566aab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9db27f9b-00d8-4df5-8b0b-f26b5b22a5ef",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b4292b9-e3dd-4a0c-bdf5-b94fd43e4f86",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -85,7 +59,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3b015589-d299-414a-8f62-f25ad8807dfb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a655a760-d42e-4fb7-bd35-35f90a564c7f","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2fe9c73d-3eb3-4d79-9cbd-f3881aadb888","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"09b210f6-7088-4467-8dc4-7b73fc78af6d","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e2391e63-b70d-46b4-9362-7243f299745d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2783639-e032-4f59-9ded-cc2c1826a525","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -102,7 +76,7 @@
             {"id":"3aeb9e96-3de1-4198-b677-fba5cea46dab","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63f14a35-2d3b-461b-892d-9e7f46566aab","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"86b2d1a5-9c63-4b38-8468-ad5815ba42b0","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9db27f9b-00d8-4df5-8b0b-f26b5b22a5ef","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3045bcaf-76ce-47e0-a07a-bf05bb806d84","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b4292b9-e3dd-4a0c-bdf5-b94fd43e4f86","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -118,22 +92,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_pokeshow_inframe_3","path":"sprites/sp_pokeshow_inframe_3/sp_pokeshow_inframe_3.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"67521423-603e-4fd6-88f3-58a7eb9a0023","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"67521423-603e-4fd6-88f3-58a7eb9a0023","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Frames",
     "path": "folders/Sprites/Attack_animation/Frames.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sp_pokeshow_inframe_3",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

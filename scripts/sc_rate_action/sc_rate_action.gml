@@ -267,7 +267,7 @@ function sc_rate_action(_a_map, _abil_map) {
 
 	sc_logging("Rating", "decline due to", "warming up", (_val[0] * -20))
 	sc_logging("Rating", "decline due to", "delay", (_val[1] * -10))
-	sc_logging("Rating", "multiplier from percentage of accuracy " + string(_val[2] * 100) + "% Multiplier", (_val[2] / 2),undefined)
+	sc_logging("Rating", "multiplier from percentage of accuracy " + string(_val[2] * 100) + "%. Multiplier for cost", (_val[2] / 2),undefined)
 	
 	_cur_rate -= _val[0] * 20
 	_cur_rate -= _val[1] * 10
@@ -293,6 +293,7 @@ function sc_rate_action(_a_map, _abil_map) {
 	sc_logging("------------------------------------------------", undefined, undefined, undefined)
 
 	sc_logging("Final rating", "of action" , _a_name, _cur_rate)
+	sc_logging("\n================================================\n", undefined, undefined, undefined)
 	return _cur_rate
 
 
