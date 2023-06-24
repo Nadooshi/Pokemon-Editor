@@ -1,0 +1,1 @@
+hint = "Warm up\n\n+1 => no hit by friends\n+3 => add range +1\n+5 => add accuracy increase\n+7 => add AP -5 without reduce damage"

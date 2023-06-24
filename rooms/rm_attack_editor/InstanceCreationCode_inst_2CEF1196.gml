@@ -1,0 +1,1 @@
+hint = "lvl 1-10 => range 3\nlvl 11-20 => range 4\nlvl 21-30 => range 5\nlvl 31-40 => range 6\nlvl 41-50 => range 7\nlvl 51-60 => range 8\nlvl 61-70 => range 9\nlvl 71-... => range 10\n\n-1 => accuracy increase\n-3 => add no hit by friends\n-5 => AP -5 without reduce damage"

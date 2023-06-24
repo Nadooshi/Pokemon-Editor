@@ -1,170 +1,151 @@
 {
-  "optionsFile": "options.json",
-  "options": [],
-  "exportToGame": true,
-  "supportedTargets": 113497714299118,
-  "extensionVersion": "1.0.2",
-  "packageId": "cc.yal.nsfs",
-  "productId": "479BA64C943D4E6A670CEE8CF960FC0C",
-  "author": "",
-  "date": "2018-04-06T09:32:03",
-  "license": "Proprietary",
-  "description": "",
-  "helpfile": "",
-  "iosProps": true,
-  "tvosProps": false,
-  "androidProps": true,
-  "installdir": "",
-  "files": [
-    {"filename":"nsfs.dll","origname":"extensions\\nsfs.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"nsfs_get_status","kind":11,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"nsfs_get_status","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"nsfs_get_directory","kind":11,"help":"","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"nsfs_get_directory","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"nsfs_set_directory","kind":11,"help":"","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"nsfs_set_directory","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"nsfs_init_raw","kind":11,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"nsfs_init_raw","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_get_attributes_ns","kind":11,"help":"file_get_attributes_ns(path) : returned values as per https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117(v=vs.85).aspx","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"file_get_attributes_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_set_attributes_ns","kind":11,"help":"file_set_attributes_ns(path, flags) : flags as per https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117(v=vs.85).aspx","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"file_set_attributes_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_get_size_ns","kind":11,"help":"file_get_size_ns(path) : Returns size of the given file, in bytes.","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"file_get_size_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_exists_ns","kind":11,"help":"file_exists_ns(path)","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"file_exists_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"directory_exists_ns","kind":11,"help":"directory_exists_ns(path)","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"directory_exists_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_delete_ns","kind":11,"help":"file_delete_ns(path)","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"file_delete_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"directory_delete_ns","kind":11,"help":"directory_delete_ns(path)","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"directory_delete_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_copy_ns","kind":11,"help":"file_copy_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"file_copy_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"directory_copy_ns","kind":11,"help":"directory_copy_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"directory_copy_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_rename_ns","kind":11,"help":"file_rename_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"file_rename_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"directory_rename_ns","kind":11,"help":"directory_rename_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"directory_rename_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_move_ns","kind":11,"help":"file_move_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"file_move_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"directory_move_ns","kind":11,"help":"directory_move_ns(from, to)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"directory_move_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_find_first_ns","kind":11,"help":"file_find_first_ns(mask)","hidden":false,"returnType":1,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"file_find_first_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_find_next_ns","kind":11,"help":"file_find_next_ns()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"file_find_next_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_find_close_ns","kind":11,"help":"file_find_close_ns()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"file_find_close_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_find_attributes_ns","kind":11,"help":"file_find_attributes_ns() : Returns the attributes of the current file in file_find","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"file_find_attributes_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_find_size_ns","kind":11,"help":"file_find_size_ns() : Returns the size (in bytes) of the current file in file_find","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"file_find_size_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_open_read_ns","kind":11,"help":"file_text_open_read_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_open_read_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_open_write_ns","kind":11,"help":"file_text_open_write_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_open_write_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_open_append_ns","kind":11,"help":"file_text_open_append_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_open_append_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_close_ns","kind":11,"help":"file_text_close_ns(fileid)","hidden":false,"returnType":2,"argCount":1,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_close_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_eof_ns","kind":11,"help":"file_text_eof_ns(fileid)","hidden":false,"returnType":2,"argCount":1,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_eof_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_read_line_ns","kind":11,"help":"file_text_read_line_ns(fileid) : Reads the next line from a file, skips line separators after it.","hidden":false,"returnType":1,"argCount":1,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"file_text_read_line_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"file_text_write_line_ns","kind":11,"help":"file_text_write_line_ns(fileid, text) : Writes a line and line separators into a file.","hidden":false,"returnType":2,"argCount":2,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"file_text_write_line_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_load_ns_raw1","kind":11,"help":"","hidden":false,"returnType":2,"argCount":1,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"buffer_load_ns_raw1","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_load_ns_raw2","kind":11,"help":"","hidden":false,"returnType":2,"argCount":2,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"buffer_load_ns_raw2","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_save_ns_raw","kind":11,"help":"","hidden":false,"returnType":2,"argCount":3,"args":[
-            1,
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"buffer_save_ns_raw","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"string_codepage","kind":11,"help":"string_codepage(str, codepage_from, codepage_to) : Converts a string between codepages. From/to can be set to -1 for UTF-8","hidden":false,"returnType":1,"argCount":3,"args":[
-            1,
-            2,
-            2,
-          ],"resourceVersion":"1.0","name":"string_codepage","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":113497714299118,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"nsfs.gml","origname":"extensions\\gml.gml","init":"nsfs_init","final":"","kind":2,"uncompress":false,"functions":[
-        {"externalName":"nsfs_init","kind":11,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"nsfs_init","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_load_ns","kind":11,"help":"buffer_load_ns(path)","hidden":false,"returnType":2,"argCount":1,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"buffer_load_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_save_ns","kind":11,"help":"buffer_save_ns(buffer, path)","hidden":false,"returnType":2,"argCount":2,"args":[
-            2,
-            2,
-          ],"resourceVersion":"1.0","name":"buffer_save_ns","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"buffer_save_ext_ns","kind":11,"help":"buffer_save_ext_ns(buffer, path, offset, size)","hidden":false,"returnType":2,"argCount":4,"args":[
-            2,
-            2,
-            2,
-            2,
-          ],"resourceVersion":"1.0","name":"buffer_save_ext_ns","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[
-        {"value":"nsfs_get_status()","hidden":false,"resourceVersion":"1.0","name":"nsfs_status","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"global.g_nsfs_is_available","hidden":false,"resourceVersion":"1.0","name":"nsfs_is_available","tags":[],"resourceType":"GMExtensionConstant",},
-      ],"ProxyFiles":[],"copyToTargets":113497714299118,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-  ],
-  "classname": "",
-  "tvosclassname": null,
-  "tvosdelegatename": null,
-  "iosdelegatename": null,
+  "resourceType": "GMExtension",
+  "resourceVersion": "1.2",
+  "name": "nsfs",
+  "androidactivityinject": "",
   "androidclassname": "",
-  "sourcedir": "",
-  "androidsourcedir": "",
-  "macsourcedir": "",
-  "maccompilerflags": "",
-  "tvosmaccompilerflags": null,
-  "maclinkerflags": "",
-  "tvosmaclinkerflags": null,
-  "iosplistinject": "",
-  "tvosplistinject": "",
+  "androidcodeinjection": "",
   "androidinject": "",
   "androidmanifestinject": "",
-  "androidactivityinject": "",
+  "androidPermissions": [],
+  "androidProps": true,
+  "androidsourcedir": "",
+  "author": "",
+  "classname": "",
+  "copyToTargets": 113497714299118,
+  "date": "2018-04-06T09:32:03",
+  "description": "",
+  "exportToGame": true,
+  "extensionVersion": "1.0.2",
+  "files": [
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":113497714299118,"filename":"nsfs.dll","final":"","functions":[
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"nsfs_get_status","argCount":0,"args":[],"documentation":"","externalName":"nsfs_get_status","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"nsfs_get_directory","argCount":0,"args":[],"documentation":"","externalName":"nsfs_get_directory","help":"","hidden":false,"kind":11,"returnType":1,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"nsfs_set_directory","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"nsfs_set_directory","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"nsfs_init_raw","argCount":0,"args":[],"documentation":"","externalName":"nsfs_init_raw","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_get_attributes_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"file_get_attributes_ns","help":"file_get_attributes_ns(path) : returned values as per https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117(v=vs.85).aspx","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_set_attributes_ns","argCount":2,"args":[
+            1,
+            2,
+          ],"documentation":"","externalName":"file_set_attributes_ns","help":"file_set_attributes_ns(path, flags) : flags as per https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117(v=vs.85).aspx","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_get_size_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"file_get_size_ns","help":"file_get_size_ns(path) : Returns size of the given file, in bytes.","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_exists_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"file_exists_ns","help":"file_exists_ns(path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"directory_exists_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"directory_exists_ns","help":"directory_exists_ns(path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_delete_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"file_delete_ns","help":"file_delete_ns(path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"directory_delete_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"directory_delete_ns","help":"directory_delete_ns(path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_copy_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"file_copy_ns","help":"file_copy_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"directory_copy_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"directory_copy_ns","help":"directory_copy_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_rename_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"file_rename_ns","help":"file_rename_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"directory_rename_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"directory_rename_ns","help":"directory_rename_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_move_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"file_move_ns","help":"file_move_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"directory_move_ns","argCount":2,"args":[
+            1,
+            1,
+          ],"documentation":"","externalName":"directory_move_ns","help":"directory_move_ns(from, to)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_find_first_ns","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"file_find_first_ns","help":"file_find_first_ns(mask)","hidden":false,"kind":11,"returnType":1,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_find_next_ns","argCount":0,"args":[],"documentation":"","externalName":"file_find_next_ns","help":"file_find_next_ns()","hidden":false,"kind":11,"returnType":1,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_find_close_ns","argCount":0,"args":[],"documentation":"","externalName":"file_find_close_ns","help":"file_find_close_ns()","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_find_attributes_ns","argCount":0,"args":[],"documentation":"","externalName":"file_find_attributes_ns","help":"file_find_attributes_ns() : Returns the attributes of the current file in file_find","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_find_size_ns","argCount":0,"args":[],"documentation":"","externalName":"file_find_size_ns","help":"file_find_size_ns() : Returns the size (in bytes) of the current file in file_find","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_open_read_ns","argCount":2,"args":[
+            1,
+            2,
+          ],"documentation":"","externalName":"file_text_open_read_ns","help":"file_text_open_read_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_open_write_ns","argCount":2,"args":[
+            1,
+            2,
+          ],"documentation":"","externalName":"file_text_open_write_ns","help":"file_text_open_write_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_open_append_ns","argCount":2,"args":[
+            1,
+            2,
+          ],"documentation":"","externalName":"file_text_open_append_ns","help":"file_text_open_append_ns(path, codepage) : Codepage can be set to -1 for default (UTF-8)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_close_ns","argCount":1,"args":[
+            2,
+          ],"documentation":"","externalName":"file_text_close_ns","help":"file_text_close_ns(fileid)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_eof_ns","argCount":1,"args":[
+            2,
+          ],"documentation":"","externalName":"file_text_eof_ns","help":"file_text_eof_ns(fileid)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_read_line_ns","argCount":1,"args":[
+            2,
+          ],"documentation":"","externalName":"file_text_read_line_ns","help":"file_text_read_line_ns(fileid) : Reads the next line from a file, skips line separators after it.","hidden":false,"kind":11,"returnType":1,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"file_text_write_line_ns","argCount":2,"args":[
+            2,
+            1,
+          ],"documentation":"","externalName":"file_text_write_line_ns","help":"file_text_write_line_ns(fileid, text) : Writes a line and line separators into a file.","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_load_ns_raw1","argCount":1,"args":[
+            1,
+          ],"documentation":"","externalName":"buffer_load_ns_raw1","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_load_ns_raw2","argCount":2,"args":[
+            1,
+            2,
+          ],"documentation":"","externalName":"buffer_load_ns_raw2","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_save_ns_raw","argCount":3,"args":[
+            1,
+            1,
+            2,
+          ],"documentation":"","externalName":"buffer_save_ns_raw","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"string_codepage","argCount":3,"args":[
+            1,
+            2,
+            2,
+          ],"documentation":"","externalName":"string_codepage","help":"string_codepage(str, codepage_from, codepage_to) : Converts a string between codepages. From/to can be set to -1 for UTF-8","hidden":false,"kind":11,"returnType":1,},
+      ],"init":"","kind":1,"order":[],"origname":"extensions\\nsfs.dll","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"nsfs_status","hidden":false,"value":"nsfs_get_status()",},
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"nsfs_is_available","hidden":false,"value":"global.g_nsfs_is_available",},
+      ],"copyToTargets":113497714299118,"filename":"nsfs.gml","final":"","functions":[
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"nsfs_init","argCount":0,"args":[],"documentation":"","externalName":"nsfs_init","help":"","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_load_ns","argCount":1,"args":[
+            2,
+          ],"documentation":"","externalName":"buffer_load_ns","help":"buffer_load_ns(path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_save_ns","argCount":2,"args":[
+            2,
+            2,
+          ],"documentation":"","externalName":"buffer_save_ns","help":"buffer_save_ns(buffer, path)","hidden":false,"kind":11,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"buffer_save_ext_ns","argCount":4,"args":[
+            2,
+            2,
+            2,
+            2,
+          ],"documentation":"","externalName":"buffer_save_ext_ns","help":"buffer_save_ext_ns(buffer, path, offset, size)","hidden":false,"kind":11,"returnType":2,},
+      ],"init":"nsfs_init","kind":2,"order":[],"origname":"extensions\\gml.gml","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
+  ],
   "gradleinject": "",
-  "androidcodeinjection": "",
   "hasConvertedCodeInjection": true,
-  "ioscodeinjection": "",
-  "tvoscodeinjection": "",
-  "iosSystemFrameworkEntries": [],
-  "tvosSystemFrameworkEntries": [],
-  "iosThirdPartyFrameworkEntries": [],
-  "tvosThirdPartyFrameworkEntries": [],
+  "helpfile": "",
+  "HTML5CodeInjection": "",
+  "html5Props": false,
   "IncludedResources": [
     "Sprites\\spr_nsfs_demo_white32",
     "Scripts\\demo-scripts\\demo_button",
@@ -178,18 +159,38 @@
     "Rooms\\rm_nsfs_demo",
     "Included Files\\nsfs-doc.html",
   ],
-  "androidPermissions": [],
-  "copyToTargets": 113497714299118,
-  "iosCocoaPods": "",
-  "tvosCocoaPods": "",
+  "installdir": "",
   "iosCocoaPodDependencies": "",
-  "tvosCocoaPodDependencies": "",
+  "iosCocoaPods": "",
+  "ioscodeinjection": "",
+  "iosdelegatename": null,
+  "iosplistinject": "",
+  "iosProps": true,
+  "iosSystemFrameworkEntries": [],
+  "iosThirdPartyFrameworkEntries": [],
+  "license": "Proprietary",
+  "maccompilerflags": "",
+  "maclinkerflags": "",
+  "macsourcedir": "",
+  "options": [],
+  "optionsFile": "options.json",
+  "packageId": "cc.yal.nsfs",
   "parent": {
     "name": "Extensions",
     "path": "folders/Extensions.yy",
   },
-  "resourceVersion": "1.2",
-  "name": "nsfs",
-  "tags": [],
-  "resourceType": "GMExtension",
+  "productId": "479BA64C943D4E6A670CEE8CF960FC0C",
+  "sourcedir": "",
+  "supportedTargets": 113497714299118,
+  "tvosclassname": null,
+  "tvosCocoaPodDependencies": "",
+  "tvosCocoaPods": "",
+  "tvoscodeinjection": "",
+  "tvosdelegatename": null,
+  "tvosmaccompilerflags": null,
+  "tvosmaclinkerflags": null,
+  "tvosplistinject": "",
+  "tvosProps": false,
+  "tvosSystemFrameworkEntries": [],
+  "tvosThirdPartyFrameworkEntries": [],
 }

@@ -1,0 +1,1 @@
+hint = "Delay\n\n+5 => accuracy increase\n+10 => max accuracy"

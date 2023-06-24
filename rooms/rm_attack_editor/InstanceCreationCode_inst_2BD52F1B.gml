@@ -1,0 +1,1 @@
+hint = "The range increases, but does not exceed a value of 10,\nexcept for Pools and Clouds - rating limit."
